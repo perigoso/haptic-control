@@ -6,6 +6,7 @@ Desktop="Desktop"
 
 [Globals]
 AutoSaveProject=1
+UsedLibrary="/home/rafael/EAGLE/eagle-cfg/libraries/Battery.lbr"
 UsedLibrary="/home/rafael/EAGLE/eagle-cfg/libraries/Crystal.lbr"
 UsedLibrary="/home/rafael/EAGLE/eagle-cfg/libraries/Knowles.lbr"
 UsedLibrary="/home/rafael/EAGLE/eagle-cfg/libraries/Microchip.lbr"
@@ -200,7 +201,6 @@ UsedLibrary="/home/rafael/EAGLE/rslib/libraries/Utility/Utility > Board.lbr"
 UsedLibrary="/home/rafael/EAGLE/rslib/libraries/Utility/Utility > Power Symbols.lbr"
 UsedLibrary="/home/rafael/EAGLE/rslib/libraries/Utility/Utility > Schematic.lbr"
 UsedLibrary="/home/rafael/EAGLE/rslib/libraries/Utility/Utility > Silkscreen.lbr"
-UsedLibrary="/home/rafael/EAGLE/eagle-cfg/libraries/Battery.lbr"
 
 [Win_1]
 Type="Control Panel"

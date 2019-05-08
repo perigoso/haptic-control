@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.25" altunitdist="mm" altunit="mm"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.125" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -46,8 +46,8 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
@@ -225,6 +225,18 @@
 <vertex x="35" y="95"/>
 <vertex x="5" y="95"/>
 </polygon>
+<polygon width="0.1524" layer="40" spacing="1.8" pour="hatch">
+<vertex x="34.875" y="34.625"/>
+<vertex x="40" y="34.625"/>
+<vertex x="40" y="49.625"/>
+<vertex x="34.875" y="49.625"/>
+</polygon>
+<polygon width="0.1524" layer="39" spacing="2" pour="hatch">
+<vertex x="34.875" y="34.625"/>
+<vertex x="40" y="34.625"/>
+<vertex x="40" y="49.625"/>
+<vertex x="34.875" y="49.625"/>
+</polygon>
 </plain>
 <libraries>
 <library name="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC">
@@ -303,6 +315,21 @@
 <rectangle x1="0.4318" y1="-0.4" x2="0.8382" y2="0.4" layer="51"/>
 <rectangle x1="-0.8382" y1="-0.4" x2="-0.4318" y2="0.4" layer="51"/>
 <text x="0" y="1.2065" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
+<package name="_0402">
+<description>&lt;b&gt; 0402&lt;/b&gt;</description>
+<wire x1="-0.245" y1="0.174" x2="0.245" y2="0.174" width="0.1016" layer="51"/>
+<wire x1="0.245" y1="-0.174" x2="-0.245" y2="-0.174" width="0.1016" layer="51"/>
+<wire x1="-0.9573" y1="0.4557" x2="0.9573" y2="0.4557" width="0.127" layer="21"/>
+<wire x1="0.9573" y1="0.4557" x2="0.9573" y2="-0.4556" width="0.127" layer="21"/>
+<wire x1="0.9573" y1="-0.4556" x2="-0.9573" y2="-0.4557" width="0.127" layer="21"/>
+<wire x1="-0.9573" y1="-0.4557" x2="-0.9573" y2="0.4557" width="0.127" layer="21"/>
+<rectangle x1="-0.0794" y1="-0.2381" x2="0.0794" y2="0.2381" layer="35"/>
+<rectangle x1="0.25" y1="-0.25" x2="0.5" y2="0.25" layer="51"/>
+<rectangle x1="-0.5" y1="-0.25" x2="-0.25" y2="0.25" layer="51"/>
+<smd name="1" x="-0.508" y="0" dx="0.6" dy="0.6" layer="1"/>
+<smd name="2" x="0.508" y="0" dx="0.6" dy="0.6" layer="1"/>
+<text x="0.0475" y="1.0939" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 </packages>
 </library>
@@ -901,6 +928,16 @@
 </package>
 </packages>
 </library>
+<library name="Generic Connector">
+<packages>
+<package name="PAD2X5MM-2P" urn="urn:adsk.eagle:footprint:30823/1" locally_modified="yes">
+<description>&lt;b&gt;SMD PAD&lt;/b&gt;</description>
+<smd name="1" x="-2" y="0" dx="2" dy="5" layer="1" cream="no"/>
+<text x="-3.67" y="-2.5" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<smd name="2" x="2" y="0" dx="2" dy="5" layer="1" cream="no"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1094,70 +1131,70 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C1" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_0402" value="100n" x="23.25" y="29.25" smashed="yes" rot="MR180">
-<attribute name="NAME" x="23.2975" y="28.2561" size="0.8" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
+<element name="C1" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_0402" value="100n" x="21.25" y="29.25" smashed="yes" rot="MR180">
+<attribute name="NAME" x="21.2975" y="28.2561" size="0.8" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
 </element>
-<element name="C2" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_0402" value="100n" x="18.75" y="28.75" smashed="yes" rot="MR90">
-<attribute name="NAME" x="19.7439" y="28.7975" size="0.8" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
+<element name="C2" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_0402" value="100n" x="17" y="28.75" smashed="yes" rot="MR270">
+<attribute name="NAME" x="16.0061" y="28.7025" size="0.8" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
 </element>
-<element name="C3" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_0402" value="100n" x="20" y="40.75" smashed="yes" rot="MR0">
-<attribute name="NAME" x="19.9525" y="41.7439" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
+<element name="C3" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_0402" value="100n" x="18" y="40.75" smashed="yes" rot="MR0">
+<attribute name="NAME" x="17.9525" y="41.7439" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
 </element>
-<element name="C5" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_0402" value="100n" x="12.5" y="38.25" smashed="yes" rot="MR90">
-<attribute name="NAME" x="13.4939" y="38.2975" size="0.8" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
+<element name="C5" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_0402" value="100n" x="10.5" y="38.25" smashed="yes" rot="MR90">
+<attribute name="NAME" x="11.4939" y="38.2975" size="0.8" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
 </element>
-<element name="L1" library="Passive Components &gt; Inductors, Chokes &amp; Coils" package="_0805" value="6u8" x="10.25" y="38.25" smashed="yes" rot="MR90">
-<attribute name="NAME" x="11.774" y="38.1865" size="0.8" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
+<element name="L1" library="Passive Components &gt; Inductors, Chokes &amp; Coils" package="_0805" value="6u8" x="8.25" y="38.625" smashed="yes" rot="MR90">
+<attribute name="NAME" x="9.774" y="38.5615" size="0.8" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
 </element>
-<element name="L2" library="Passive Components &gt; Inductors, Chokes &amp; Coils" package="_0603" value="BLM18HE152SN1" x="27.5" y="27.5" smashed="yes" rot="MR90">
-<attribute name="NAME" x="28.7065" y="27.5" size="0.8" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
+<element name="L2" library="Passive Components &gt; Inductors, Chokes &amp; Coils" package="_0603" value="BLM18HE152SN1" x="24.5" y="23.5" smashed="yes" rot="MR90">
+<attribute name="NAME" x="25.7065" y="23.5" size="0.8" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
 </element>
-<element name="C4" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="0603_WAVE" value="22u" x="14" y="38.75" smashed="yes" rot="MR90">
-<attribute name="NAME" x="15.27" y="38.75" size="0.8" layer="26" font="vector" ratio="12" rot="MR90" align="center"/>
+<element name="C4" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="0603_WAVE" value="22u" x="12" y="38.75" smashed="yes" rot="MR90">
+<attribute name="NAME" x="13.27" y="38.75" size="0.8" layer="26" font="vector" ratio="12" rot="MR90" align="center"/>
 </element>
-<element name="C6" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="0603_WAVE" value="22u" x="10.25" y="41" smashed="yes" rot="MR180">
-<attribute name="NAME" x="10.25" y="39.73" size="0.8" layer="26" font="vector" ratio="12" rot="MR180" align="center"/>
+<element name="C6" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="0603_WAVE" value="22u" x="8.25" y="41.375" smashed="yes" rot="MR180">
+<attribute name="NAME" x="8.25" y="40.105" size="0.8" layer="26" font="vector" ratio="12" rot="MR180" align="center"/>
 </element>
-<element name="C7" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_0402" value="100n" x="20" y="42" smashed="yes" rot="MR0">
-<attribute name="NAME" x="19.9525" y="42.9939" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
+<element name="C7" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_0402" value="100n" x="18" y="42" smashed="yes" rot="MR0">
+<attribute name="NAME" x="17.9525" y="42.9939" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
 </element>
-<element name="C8" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_0402" value="100n" x="23" y="41.25" smashed="yes" rot="MR90">
-<attribute name="NAME" x="23.9939" y="41.2975" size="0.8" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
+<element name="C8" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_0402" value="100n" x="21" y="41.25" smashed="yes" rot="MR90">
+<attribute name="NAME" x="21.9939" y="41.2975" size="0.8" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
 </element>
-<element name="U1" library="Texas Instruments" package="QFN48" value="CC2642R" x="20" y="35" smashed="yes" rot="MR0">
-<attribute name="NAME" x="23" y="39.3" size="0.6096" layer="26" rot="MR0"/>
+<element name="U1" library="Texas Instruments" package="QFN48" value="CC2642R" x="18" y="35" smashed="yes" rot="MR0">
+<attribute name="NAME" x="21" y="39.3" size="0.6096" layer="26" rot="MR0"/>
 </element>
-<element name="C9" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_0402" value="12p" x="29.5" y="32.75" smashed="yes" rot="MR270">
-<attribute name="NAME" x="30.5061" y="32.7025" size="0.8" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
+<element name="C9" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_0402" value="12p" x="24.75" y="31.5" smashed="yes" rot="MR0">
+<attribute name="NAME" x="24.7025" y="30.4939" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
 </element>
-<element name="C10" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_0402" value="12p" x="29.5" y="35.75" smashed="yes" rot="MR270">
-<attribute name="NAME" x="30.5061" y="35.7025" size="0.8" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
+<element name="C10" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_0402" value="12p" x="27.75" y="31.5" smashed="yes" rot="MR0">
+<attribute name="NAME" x="27.7025" y="30.4939" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
 </element>
-<element name="C11" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_0402" value="np" x="24.25" y="45.5" smashed="yes" rot="MR90">
-<attribute name="NAME" x="25.2439" y="45.5475" size="0.8" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
+<element name="C11" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_0402" value="DNP" x="22.25" y="45.5" smashed="yes" rot="MR90">
+<attribute name="NAME" x="23.2439" y="45.5475" size="0.8" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
 </element>
-<element name="C12" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_0402" value="np" x="19.75" y="45.5" smashed="yes" rot="MR270">
-<attribute name="NAME" x="18.7561" y="45.4525" size="0.8" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
+<element name="C12" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_0402" value="DNP" x="17.75" y="45.5" smashed="yes" rot="MR270">
+<attribute name="NAME" x="16.7561" y="45.4525" size="0.8" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
 </element>
-<element name="C13" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="0603_WAVE" value="1u" x="17.25" y="28.25" smashed="yes" rot="MR270">
-<attribute name="NAME" x="15.98" y="28.25" size="0.8" layer="26" font="vector" ratio="12" rot="MR270" align="center"/>
+<element name="C13" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="0603_WAVE" value="1u" x="15.5" y="28.25" smashed="yes" rot="MR270">
+<attribute name="NAME" x="14.23" y="28.25" size="0.8" layer="26" font="vector" ratio="12" rot="MR270" align="center"/>
 </element>
-<element name="TC1" library="TagConnect" package="TC2050-IDC" value="TC2050-IDC" x="5" y="23.75" smashed="yes" rot="MR90">
-<attribute name="NAME" x="2.46" y="30.1" size="1.016" layer="26" rot="MR180"/>
-<attribute name="VALUE" x="2.46" y="18.035" size="1.016" layer="28" rot="MR180"/>
+<element name="TC1" library="TagConnect" package="TC2050-IDC" value="TC2050-IDC" x="5.25" y="25" smashed="yes" rot="MR0">
+<attribute name="NAME" x="-1.1" y="22.46" size="1.016" layer="26" rot="MR90"/>
+<attribute name="VALUE" x="10.965" y="22.46" size="1.016" layer="28" rot="MR90"/>
 </element>
-<element name="C14" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_0402" value="100n" x="17.25" y="41" smashed="yes" rot="MR90">
-<attribute name="NAME" x="18.2439" y="41.0475" size="0.8" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
+<element name="C14" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_0402" value="100n" x="15.25" y="41" smashed="yes" rot="MR90">
+<attribute name="NAME" x="16.2439" y="41.0475" size="0.8" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
 </element>
 <element name="E1" library="Microstrip Antenna" package="TRACE_ANTENNA_2.4GHZ_15.2MM" value="2.4GHZTRACE-15.2MM" x="34.8" y="37.6" smashed="yes" rot="MR90"/>
-<element name="X1" library="Crystal" package="4-SMD-3225" value="48MHz" x="22" y="45.5" smashed="yes" rot="MR90"/>
-<element name="X2" library="Crystal" package="2-SMD-3215" value="32.768kHz" x="27.5" y="34.25" smashed="yes" rot="MR90">
-<attribute name="NAME" x="26.333" y="38.268" size="1.016" layer="26" ratio="18" rot="MR180"/>
-<attribute name="VALUE" x="25.179" y="31.583" size="0.8128" layer="28" ratio="10" rot="MR90"/>
+<element name="X1" library="Crystal" package="4-SMD-3225" value="48MHz" x="20" y="45.5" smashed="yes" rot="MR90"/>
+<element name="X2" library="Crystal" package="2-SMD-3215" value="32.768kHz" x="26.25" y="33.5" smashed="yes" rot="MR180">
+<attribute name="NAME" x="30.268" y="34.667" size="1.016" layer="26" ratio="18" rot="MR270"/>
+<attribute name="VALUE" x="23.583" y="35.821" size="0.8128" layer="28" ratio="10" rot="MR180"/>
 </element>
-<element name="U2" library="Microchip" package="WSOIC8" value="SST26VF064B" x="7.5" y="32.5" smashed="yes" rot="MR90">
-<attribute name="NAME" x="4.6425" y="29.325" size="1.016" layer="26" ratio="18" rot="MR180"/>
-<attribute name="VALUE" x="4.6425" y="36.31" size="0.8128" layer="28" ratio="10" rot="MR180"/>
+<element name="U2" library="Microchip" package="WSOIC8" value="SST26VF064B" x="7.25" y="32.875" smashed="yes" rot="MR90">
+<attribute name="NAME" x="4.3925" y="29.7" size="1.016" layer="26" ratio="18" rot="MR180"/>
+<attribute name="VALUE" x="4.3925" y="36.685" size="0.8128" layer="28" ratio="10" rot="MR180"/>
 </element>
 <element name="R2" library="Passive Components &gt; Resistors &gt; Chip Resistors" package="_0402" value="100k" x="1.75" y="36.75" smashed="yes" rot="MR90">
 <attribute name="NAME" x="2.8439" y="36.7975" size="0.8" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
@@ -1165,11 +1202,11 @@ design rules under a new name.</description>
 <element name="R4" library="Passive Components &gt; Resistors &gt; Chip Resistors" package="_0402" value="100k" x="3" y="36.75" smashed="yes" rot="MR90">
 <attribute name="NAME" x="4.0939" y="36.7975" size="0.8" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
 </element>
-<element name="R5" library="Passive Components &gt; Resistors &gt; Chip Resistors" package="_0402" value="100k" x="15" y="30.75" smashed="yes" rot="MR270">
-<attribute name="NAME" x="13.9061" y="30.7025" size="0.8" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
+<element name="R5" library="Passive Components &gt; Resistors &gt; Chip Resistors" package="_0402" value="100k" x="13.75" y="28.625" smashed="yes" rot="MR270">
+<attribute name="NAME" x="12.6561" y="28.5775" size="0.8" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
 </element>
-<element name="C15" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_0402" value="100n" x="13.75" y="30.75" smashed="yes" rot="MR90">
-<attribute name="NAME" x="14.7439" y="30.7975" size="0.8" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
+<element name="C15" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_0402" value="100n" x="12.5" y="28.625" smashed="yes" rot="MR90">
+<attribute name="NAME" x="13.4939" y="28.6725" size="0.8" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
 </element>
 <element name="U3" library="TDK" package="QFN20" value="ICM20948" x="20" y="70" smashed="yes" rot="MR180">
 <attribute name="NAME" x="17.75" y="67.5" size="1.27" layer="26" rot="MR180"/>
@@ -1230,8 +1267,8 @@ design rules under a new name.</description>
 <element name="U7" library="Microchip" package="QFN44" value="MTCH6301" x="20" y="84" smashed="yes" rot="MR45">
 <attribute name="NAME" x="25.7275625" y="85.3435" size="0.6096" layer="26" rot="MR45"/>
 </element>
-<element name="R1" library="Passive Components &gt; Resistors &gt; Chip Resistors" package="_0402" value="100k" x="16" y="41" smashed="yes" rot="MR90">
-<attribute name="NAME" x="17.0939" y="41.0475" size="0.8" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
+<element name="R1" library="Passive Components &gt; Resistors &gt; Chip Resistors" package="_0402" value="100k" x="14" y="41" smashed="yes" rot="MR90">
+<attribute name="NAME" x="15.0939" y="41.0475" size="0.8" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
 </element>
 <element name="C21" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_0402" value="100n" x="17.25" y="63" smashed="yes" rot="MR90">
 <attribute name="NAME" x="18.2439" y="63.0475" size="0.8" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
@@ -1251,26 +1288,62 @@ design rules under a new name.</description>
 <element name="C26" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_0402" value="100n" x="25.25" y="88.25" smashed="yes" rot="MR135">
 <attribute name="NAME" x="25.986378125" y="87.580796875" size="0.8" layer="26" font="vector" ratio="15" rot="MR135" align="center"/>
 </element>
-<element name="C27" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_1206" value="100u" x="31" y="27.5" smashed="yes" rot="MR180">
-<attribute name="NAME" x="30.9775" y="25.4887" size="0.8" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
+<element name="C27" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_1206" value="100u" x="28" y="23.5" smashed="yes" rot="MR180">
+<attribute name="NAME" x="27.9775" y="21.4887" size="0.8" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
 </element>
-<element name="A1" library="Connectors &gt; Antennas" package="U.FL" value="U.FL" x="30" y="46" smashed="yes" rot="MR90"/>
-<element name="TP4" library="Utility &gt; Board" package="TEST_POINT" value="TEST_POINT" x="5" y="14" smashed="yes" rot="MR0">
-<attribute name="NAME" x="5" y="15.27" size="0.8" layer="22" font="vector" ratio="15" rot="MR0" align="center"/>
+<element name="A1" library="Connectors &gt; Antennas" package="U.FL" value="U.FL" x="32.125" y="46.375" smashed="yes" rot="MR270"/>
+<element name="U8" library="Texas Instruments" package="VQFN20" value="BQ51050B" x="8" y="10" smashed="yes" rot="MR270">
+<attribute name="NAME" x="4.19" y="12.54" size="1.27" layer="26" rot="MR270"/>
 </element>
-<element name="TP5" library="Utility &gt; Board" package="TEST_POINT" value="TEST_POINT" x="5" y="12" smashed="yes" rot="MR0">
-<attribute name="NAME" x="5" y="13.27" size="0.8" layer="22" font="vector" ratio="15" rot="MR0" align="center"/>
+<element name="U$1" library="Power &gt; Battery Management" package="SOT23-6" value="FS312F-G" x="14" y="15" smashed="yes" rot="MR0">
+<attribute name="NAME" x="15.905" y="16.905" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="15.905" y="11.571" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="U8" library="Texas Instruments" package="VQFN20" value="BQ51050B" x="8" y="7" smashed="yes" rot="MR270">
-<attribute name="NAME" x="4.19" y="9.54" size="1.27" layer="26" rot="MR270"/>
+<element name="U$2" library="Semiconductors &gt; Discrete Semiconductors &gt; Transistors &gt; MOSFETs" package="SOT23-6" value="FS8205" x="18" y="15" smashed="yes" rot="MR0">
+<attribute name="NAME" x="19.397" y="16.702" size="1.016" layer="26" ratio="10" rot="MR0"/>
+<attribute name="VALUE" x="19.397" y="12.328" size="1.016" layer="28" ratio="10" rot="MR0"/>
 </element>
-<element name="U$1" library="Power &gt; Battery Management" package="SOT23-6" value="FS312F-G" x="11" y="13" smashed="yes" rot="MR0">
-<attribute name="NAME" x="12.905" y="14.905" size="1.27" layer="26" rot="MR0"/>
-<attribute name="VALUE" x="12.905" y="9.571" size="1.27" layer="28" rot="MR0"/>
+<element name="C28" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_0402" value="1p" x="23.375" y="36.125" smashed="yes" rot="MR90">
+<attribute name="NAME" x="24.3689" y="36.1725" size="0.8" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
 </element>
-<element name="U$2" library="Semiconductors &gt; Discrete Semiconductors &gt; Transistors &gt; MOSFETs" package="SOT23-6" value="FS8205" x="15" y="13" smashed="yes" rot="MR0">
-<attribute name="NAME" x="16.397" y="14.702" size="1.016" layer="26" ratio="10" rot="MR0"/>
-<attribute name="VALUE" x="16.397" y="10.328" size="1.016" layer="28" ratio="10" rot="MR0"/>
+<element name="C29" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_0402" value="1p" x="25.125" y="38.125" smashed="yes" rot="MR0">
+<attribute name="NAME" x="25.0775" y="39.1189" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
+</element>
+<element name="C30" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_0402" value="12p" x="23.375" y="41.125" smashed="yes" rot="MR90">
+<attribute name="NAME" x="24.3689" y="41.1725" size="0.8" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
+</element>
+<element name="C31" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_0402" value="1p" x="28.25" y="39.375" smashed="yes" rot="MR90">
+<attribute name="NAME" x="29.2439" y="39.4225" size="0.8" layer="26" font="vector" ratio="15" rot="MR90" align="center"/>
+</element>
+<element name="C35" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_0402" value="DNP" x="33.5" y="36" smashed="yes" rot="MR270">
+<attribute name="NAME" x="32.5061" y="35.9525" size="0.8" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
+</element>
+<element name="L3" library="Passive Components &gt; Inductors, Chokes &amp; Coils" package="_0402" value="2n4" x="23.375" y="38.875" smashed="yes" rot="MR270">
+<attribute name="NAME" x="22.2811" y="38.8275" size="0.8" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
+</element>
+<element name="L4" library="Passive Components &gt; Inductors, Chokes &amp; Coils" package="_0402" value="2n4" x="25.125" y="36.875" smashed="yes" rot="MR0">
+<attribute name="NAME" x="25.0775" y="37.9689" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
+</element>
+<element name="L5" library="Passive Components &gt; Inductors, Chokes &amp; Coils" package="_0402" value="2N" x="27.375" y="37.625" smashed="yes" rot="MR0">
+<attribute name="NAME" x="27.3275" y="38.7189" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
+</element>
+<element name="L6" library="Passive Components &gt; Inductors, Chokes &amp; Coils" package="_0402" value="2N" x="29.125" y="37.625" smashed="yes" rot="MR0">
+<attribute name="NAME" x="29.0775" y="38.7189" size="0.8" layer="26" font="vector" ratio="15" rot="MR0" align="center"/>
+</element>
+<element name="C34" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_0402" value="DNP" x="32.125" y="43" smashed="yes" rot="MR270">
+<attribute name="NAME" x="31.1311" y="42.9525" size="0.8" layer="26" font="vector" ratio="15" rot="MR270" align="center"/>
+</element>
+<element name="C33" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_0402" value="12p" x="30.875" y="37.625" smashed="yes" rot="MR180">
+<attribute name="NAME" x="30.9225" y="36.6311" size="0.8" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
+</element>
+<element name="C32" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_0402" value="1p8" x="33.125" y="37.625" smashed="yes" rot="MR180">
+<attribute name="NAME" x="33.1725" y="36.6311" size="0.8" layer="26" font="vector" ratio="15" rot="MR180" align="center"/>
+</element>
+<element name="P1" library="Generic Connector" package="PAD2X5MM-2P" value="2P-PAD" x="8" y="3" smashed="yes" rot="MR0">
+<attribute name="NAME" x="11.67" y="0.5" size="1.27" layer="26" rot="MR90"/>
+</element>
+<element name="P2" library="Generic Connector" package="PAD2X5MM-2P" value="2P-PAD" x="4" y="17" smashed="yes" rot="MR270">
+<attribute name="NAME" x="6.5" y="20.67" size="1.27" layer="26" rot="MR0"/>
 </element>
 </elements>
 <signals>
@@ -1281,16 +1354,16 @@ design rules under a new name.</description>
 <contactref element="L1" pad="2"/>
 <contactref element="C6" pad="P$1"/>
 <contactref element="C7" pad="1"/>
-<wire x1="22.75" y1="38.53" x2="23" y2="40.742" width="0" layer="19" extent="16-16"/>
-<wire x1="21.25" y1="38.53" x2="22.75" y2="38.53" width="0" layer="19" extent="16-16"/>
-<wire x1="20.508" y1="42" x2="23" y2="40.742" width="0" layer="19" extent="16-16"/>
-<wire x1="10.25" y1="39.266" x2="20.508" y2="42" width="0" layer="19" extent="16-16"/>
-<wire x1="9.427" y1="41" x2="10.25" y2="39.266" width="0" layer="19" extent="16-16"/>
+<wire x1="20.75" y1="38.53" x2="21" y2="40.742" width="0" layer="19" extent="16-16"/>
+<wire x1="19.25" y1="38.53" x2="20.75" y2="38.53" width="0" layer="19" extent="16-16"/>
+<wire x1="18.508" y1="42" x2="21" y2="40.742" width="0" layer="19" extent="16-16"/>
+<wire x1="8.25" y1="39.641" x2="18.508" y2="42" width="0" layer="19" extent="16-16"/>
+<wire x1="7.427" y1="41.375" x2="8.25" y2="39.641" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="MCU_SW">
 <contactref element="L1" pad="1"/>
 <contactref element="U1" pad="33"/>
-<wire x1="10.25" y1="37.234" x2="16.47" y2="36.25" width="0" layer="19" extent="16-16"/>
+<wire x1="8.25" y1="37.609" x2="14.47" y2="36.25" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="VDDS">
 <contactref element="U1" pad="22"/>
@@ -1304,25 +1377,25 @@ design rules under a new name.</description>
 <contactref element="C3" pad="1"/>
 <contactref element="C4" pad="P$1"/>
 <contactref element="R1" pad="2"/>
-<wire x1="20.75" y1="38.53" x2="20.508" y2="40.75" width="0" layer="19" extent="16-16"/>
-<wire x1="16" y1="41.508" x2="20.508" y2="40.75" width="0" layer="19" extent="16-16"/>
-<wire x1="14" y1="37.927" x2="16" y2="41.508" width="0" layer="19" extent="16-16"/>
-<wire x1="12.5" y1="37.742" x2="14" y2="37.927" width="0" layer="19" extent="16-16"/>
-<wire x1="16.47" y1="36.75" x2="14" y2="37.927" width="0" layer="19" extent="16-16"/>
-<wire x1="18.25" y1="31.47" x2="16.47" y2="36.75" width="0" layer="19" extent="16-16"/>
-<wire x1="18.75" y1="28.242" x2="18.25" y2="31.47" width="0" layer="19" extent="16-16"/>
-<wire x1="22.742" y1="29.25" x2="18.75" y2="28.242" width="0" layer="19" extent="16-16"/>
-<wire x1="22.75" y1="31.47" x2="22.742" y2="29.25" width="0" layer="19" extent="16-16"/>
-<wire x1="27.5" y1="28.45" x2="22.742" y2="29.25" width="0" layer="19" extent="16-16"/>
+<wire x1="18.75" y1="38.53" x2="18.508" y2="40.75" width="0" layer="19" extent="16-16"/>
+<wire x1="14" y1="41.508" x2="18.508" y2="40.75" width="0" layer="19" extent="16-16"/>
+<wire x1="12" y1="37.927" x2="14" y2="41.508" width="0" layer="19" extent="16-16"/>
+<wire x1="10.5" y1="37.742" x2="12" y2="37.927" width="0" layer="19" extent="16-16"/>
+<wire x1="14.47" y1="36.75" x2="12" y2="37.927" width="0" layer="19" extent="16-16"/>
+<wire x1="16.25" y1="31.47" x2="14.47" y2="36.75" width="0" layer="19" extent="16-16"/>
+<wire x1="17" y1="29.258" x2="16.25" y2="31.47" width="0" layer="19" extent="16-16"/>
+<wire x1="20.742" y1="29.25" x2="17" y2="29.258" width="0" layer="19" extent="16-16"/>
+<wire x1="20.75" y1="31.47" x2="20.742" y2="29.25" width="0" layer="19" extent="16-16"/>
+<wire x1="24.5" y1="24.45" x2="20.742" y2="29.25" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="MCU_!RESET">
 <contactref element="TC1" pad="10"/>
 <contactref element="C14" pad="1"/>
 <contactref element="U1" pad="35"/>
 <contactref element="R1" pad="1"/>
-<wire x1="16" y1="40.492" x2="17.25" y2="40.492" width="0" layer="19" extent="16-16"/>
-<wire x1="16.47" y1="37.25" x2="16" y2="40.492" width="0" layer="19" extent="16-16"/>
-<wire x1="5.635" y1="21.21" x2="16.47" y2="37.25" width="0" layer="19" extent="16-16"/>
+<wire x1="14" y1="40.492" x2="15.25" y2="40.492" width="0" layer="19" extent="16-16"/>
+<wire x1="14.47" y1="37.25" x2="14" y2="40.492" width="0" layer="19" extent="16-16"/>
+<wire x1="7.79" y1="25.635" x2="14.47" y2="37.25" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="GND" airwireshidden="yes">
 <contactref element="C9" pad="2"/>
@@ -1385,6 +1458,13 @@ design rules under a new name.</description>
 <contactref element="C25" pad="2"/>
 <contactref element="C26" pad="2"/>
 <contactref element="C27" pad="2"/>
+<contactref element="C28" pad="1"/>
+<contactref element="C31" pad="2"/>
+<contactref element="C30" pad="2"/>
+<contactref element="C35" pad="2"/>
+<contactref element="A1" pad="P$2"/>
+<contactref element="A1" pad="P$1"/>
+<contactref element="E1" pad="GND"/>
 <wire x1="22.828428125" y1="86.828425" x2="25.6092125" y2="88.609209375" width="0" layer="19" extent="16-16"/>
 <wire x1="20" y1="84" x2="22.828428125" y2="86.828425" width="0" layer="19" extent="16-16"/>
 <wire x1="22.828428125" y1="81.171571875" x2="20" y2="84" width="0" layer="19" extent="16-16"/>
@@ -1402,84 +1482,91 @@ design rules under a new name.</description>
 <wire x1="23.25" y1="69.492" x2="21.48" y2="69" width="0" layer="19" extent="16-16"/>
 <wire x1="19.25" y1="64.55" x2="20.6" y2="68.52" width="0" layer="19" extent="16-16"/>
 <wire x1="17.25" y1="63.508" x2="19.25" y2="64.55" width="0" layer="19" extent="16-16"/>
-<wire x1="22.8" y1="46.6" x2="17.25" y2="63.508" width="0" layer="19" extent="16-16"/>
-<wire x1="24.25" y1="46.008" x2="22.8" y2="46.6" width="0" layer="19" extent="16-16"/>
-<wire x1="21.2" y1="44.4" x2="22.8" y2="46.6" width="0" layer="19" extent="16-16"/>
-<wire x1="19.75" y1="44.992" x2="21.2" y2="44.4" width="0" layer="19" extent="16-16"/>
-<wire x1="19.492" y1="42" x2="21.2" y2="44.4" width="0" layer="19" extent="16-16"/>
-<wire x1="19.492" y1="40.75" x2="19.492" y2="42" width="0" layer="19" extent="16-16"/>
-<wire x1="17.25" y1="41.508" x2="19.492" y2="42" width="0" layer="19" extent="16-16"/>
-<wire x1="23" y1="41.758" x2="21.2" y2="44.4" width="0" layer="19" extent="16-16"/>
-<wire x1="14" y1="39.573" x2="17.25" y2="41.508" width="0" layer="19" extent="16-16"/>
-<wire x1="12.5" y1="38.758" x2="14" y2="39.573" width="0" layer="19" extent="16-16"/>
-<wire x1="11.073" y1="41" x2="12.5" y2="38.758" width="0" layer="19" extent="16-16"/>
-<wire x1="20" y1="35" x2="19.492" y2="40.75" width="0" layer="19" extent="16-16"/>
-<wire x1="18.75" y1="29.258" x2="20" y2="35" width="0" layer="19" extent="16-16"/>
-<wire x1="17.25" y1="27.427" x2="18.75" y2="29.258" width="0" layer="19" extent="16-16"/>
-<wire x1="23.758" y1="29.25" x2="18.75" y2="29.258" width="0" layer="19" extent="16-16"/>
-<wire x1="13.75" y1="31.258" x2="17.25" y2="27.427" width="0" layer="19" extent="16-16"/>
-<wire x1="29.5" y1="32.242" x2="23.758" y2="29.25" width="0" layer="19" extent="16-16"/>
-<wire x1="29.5" y1="35.242" x2="29.5" y2="32.242" width="0" layer="19" extent="16-16"/>
-<wire x1="4" y1="40" x2="11.073" y2="41" width="0" layer="19" extent="16-16"/>
-<wire x1="4.17" y1="34.405" x2="4" y2="40" width="0" layer="19" extent="16-16"/>
-<wire x1="35" y1="26" x2="29.5" y2="32.242" width="0" layer="19" extent="16-16"/>
-<wire x1="4.365" y1="23.75" x2="4.17" y2="34.405" width="0" layer="19" extent="16-16"/>
-<wire x1="5.635" y1="22.48" x2="4.365" y2="23.75" width="0" layer="19" extent="16-16"/>
-<wire x1="20" y1="7" x2="17.25" y2="27.427" width="0" layer="19" extent="16-16"/>
+<wire x1="20.8" y1="46.6" x2="17.25" y2="63.508" width="0" layer="19" extent="16-16"/>
+<wire x1="22.25" y1="46.008" x2="20.8" y2="46.6" width="0" layer="19" extent="16-16"/>
+<wire x1="19.2" y1="44.4" x2="20.8" y2="46.6" width="0" layer="19" extent="16-16"/>
+<wire x1="17.75" y1="44.992" x2="19.2" y2="44.4" width="0" layer="19" extent="16-16"/>
+<wire x1="17.492" y1="42" x2="19.2" y2="44.4" width="0" layer="19" extent="16-16"/>
+<wire x1="17.492" y1="40.75" x2="17.492" y2="42" width="0" layer="19" extent="16-16"/>
+<wire x1="15.25" y1="41.508" x2="17.492" y2="42" width="0" layer="19" extent="16-16"/>
+<wire x1="21" y1="41.758" x2="19.2" y2="44.4" width="0" layer="19" extent="16-16"/>
+<wire x1="23.375" y1="41.633" x2="21" y2="41.758" width="0" layer="19" extent="16-16"/>
+<wire x1="12" y1="39.573" x2="15.25" y2="41.508" width="0" layer="19" extent="16-16"/>
+<wire x1="10.5" y1="38.758" x2="12" y2="39.573" width="0" layer="19" extent="16-16"/>
+<wire x1="9.073" y1="41.375" x2="10.5" y2="38.758" width="0" layer="19" extent="16-16"/>
+<wire x1="28.25" y1="39.883" x2="23.375" y2="41.633" width="0" layer="19" extent="16-16"/>
+<wire x1="4" y1="40" x2="9.073" y2="41.375" width="0" layer="19" extent="16-16"/>
+<wire x1="3.92" y1="34.78" x2="4" y2="40" width="0" layer="19" extent="16-16"/>
+<wire x1="18" y1="35" x2="17.492" y2="40.75" width="0" layer="19" extent="16-16"/>
+<wire x1="23.375" y1="35.617" x2="18" y2="35" width="0" layer="19" extent="16-16"/>
+<wire x1="24.242" y1="31.5" x2="23.375" y2="35.617" width="0" layer="19" extent="16-16"/>
+<wire x1="27.242" y1="31.5" x2="24.242" y2="31.5" width="0" layer="19" extent="16-16"/>
+<wire x1="21.758" y1="29.25" x2="24.242" y2="31.5" width="0" layer="19" extent="16-16"/>
+<wire x1="17" y1="28.242" x2="21.758" y2="29.25" width="0" layer="19" extent="16-16"/>
+<wire x1="15.5" y1="27.427" x2="17" y2="28.242" width="0" layer="19" extent="16-16"/>
+<wire x1="12.5" y1="29.133" x2="15.5" y2="27.427" width="0" layer="19" extent="16-16"/>
+<wire x1="33.5" y1="35.492" x2="28.25" y2="39.883" width="0" layer="19" extent="16-16"/>
+<wire x1="34.55" y1="35.5" x2="33.5" y2="35.492" width="0" layer="19" extent="16-16"/>
+<wire x1="6.52" y1="25.635" x2="12.5" y2="29.133" width="0" layer="19" extent="16-16"/>
+<wire x1="5.25" y1="24.365" x2="6.52" y2="25.635" width="0" layer="19" extent="16-16"/>
+<wire x1="30.75" y1="46.375" x2="28.25" y2="39.883" width="0" layer="19" extent="16-16"/>
+<wire x1="33.5" y1="46.375" x2="30.75" y2="46.375" width="0" layer="19" extent="16-16"/>
+<wire x1="29.27" y1="23.5" x2="27.242" y2="31.5" width="0" layer="19" extent="16-16"/>
+<wire x1="35" y1="26" x2="29.27" y2="23.5" width="0" layer="19" extent="16-16"/>
+<wire x1="20" y1="7" x2="29.27" y2="23.5" width="0" layer="19" extent="16-16"/>
 <wire x1="19.1625" y1="5.748" x2="20" y2="7" width="0" layer="19" extent="16-16"/>
 <wire x1="19.492" y1="3.5" x2="19.1625" y2="5.748" width="0" layer="19" extent="16-16"/>
 <wire x1="39" y1="-7.823" x2="19.492" y2="3.5" width="0" layer="19" extent="1-16"/>
 <wire x1="41.05" y1="-8.2" x2="39" y2="-7.823" width="0" layer="19" extent="1-1"/>
 <wire x1="45" y1="-6.177" x2="41.05" y2="-8.2" width="0" layer="19" extent="1-1"/>
-<wire x1="32.27" y1="27.5" x2="19.492" y2="3.5" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="XTAL_48M_N">
 <contactref element="U1" pad="46"/>
 <contactref element="C12" pad="1"/>
 <contactref element="X1" pad="3"/>
-<wire x1="19.75" y1="46.008" x2="21.2" y2="46.6" width="0" layer="19" extent="16-16"/>
-<wire x1="21.75" y1="38.53" x2="19.75" y2="46.008" width="0" layer="19" extent="16-16"/>
+<wire x1="17.75" y1="46.008" x2="19.2" y2="46.6" width="0" layer="19" extent="16-16"/>
+<wire x1="19.75" y1="38.53" x2="17.75" y2="46.008" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="XTAL_48M_P">
 <contactref element="U1" pad="47"/>
 <contactref element="C11" pad="1"/>
 <contactref element="X1" pad="1"/>
-<wire x1="22.8" y1="44.4" x2="24.25" y2="44.992" width="0" layer="19" extent="16-16"/>
-<wire x1="22.25" y1="38.53" x2="22.8" y2="44.4" width="0" layer="19" extent="16-16"/>
+<wire x1="20.8" y1="44.4" x2="22.25" y2="44.992" width="0" layer="19" extent="16-16"/>
+<wire x1="20.25" y1="38.53" x2="20.8" y2="44.4" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="XTAL_32K_Q1">
 <contactref element="U1" pad="3"/>
 <contactref element="C10" pad="1"/>
 <contactref element="X2" pad="2"/>
-<wire x1="27.5" y1="35.6" x2="29.5" y2="36.258" width="0" layer="19" extent="16-16"/>
-<wire x1="23.53" y1="36.75" x2="27.5" y2="35.6" width="0" layer="19" extent="16-16"/>
+<wire x1="27.6" y1="33.5" x2="28.258" y2="31.5" width="0" layer="19" extent="16-16"/>
+<wire x1="21.53" y1="36.75" x2="27.6" y2="33.5" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="XTAL_32K_Q2">
 <contactref element="U1" pad="4"/>
 <contactref element="C9" pad="1"/>
 <contactref element="X2" pad="1"/>
-<wire x1="27.5" y1="32.9" x2="29.5" y2="33.258" width="0" layer="19" extent="16-16"/>
-<wire x1="23.53" y1="36.25" x2="27.5" y2="32.9" width="0" layer="19" extent="16-16"/>
+<wire x1="24.9" y1="33.5" x2="21.53" y2="36.25" width="0" layer="19" extent="16-16"/>
+<wire x1="25.258" y1="31.5" x2="24.9" y2="33.5" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$2">
 <contactref element="U1" pad="23"/>
 <contactref element="C13" pad="P$1"/>
-<wire x1="17.25" y1="29.073" x2="17.75" y2="31.47" width="0" layer="19" extent="16-16"/>
+<wire x1="15.5" y1="29.073" x2="15.75" y2="31.47" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="JTAG_TCKC">
 <contactref element="U1" pad="25"/>
 <contactref element="TC1" pad="4"/>
-<wire x1="4.365" y1="25.02" x2="16.47" y2="32.25" width="0" layer="19" extent="16-16"/>
+<wire x1="3.98" y1="24.365" x2="14.47" y2="32.25" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="JTAG_TMSC">
 <contactref element="U1" pad="24"/>
 <contactref element="TC1" pad="2"/>
-<wire x1="4.365" y1="22.48" x2="17.25" y2="31.47" width="0" layer="19" extent="16-16"/>
+<wire x1="6.52" y1="24.365" x2="15.25" y2="31.47" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="JTAG_TDO">
 <contactref element="U1" pad="26"/>
 <contactref element="TC1" pad="6"/>
-<wire x1="5.635" y1="26.29" x2="16.47" y2="32.75" width="0" layer="19" extent="16-16"/>
+<wire x1="2.71" y1="25.635" x2="14.47" y2="32.75" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="JTAG_TDI">
 <contactref element="TC1" pad="8"/>
@@ -1522,49 +1609,49 @@ design rules under a new name.</description>
 <wire x1="17.25" y1="59.992" x2="23.758" y2="61" width="0" layer="19" extent="16-16"/>
 <wire x1="3" y1="37.258" x2="17.25" y2="59.992" width="0" layer="19" extent="16-16"/>
 <wire x1="1.75" y1="37.258" x2="3" y2="37.258" width="0" layer="19" extent="16-16"/>
-<wire x1="10.83" y1="30.595" x2="3" y2="37.258" width="0" layer="19" extent="16-16"/>
-<wire x1="13.75" y1="30.242" x2="10.83" y2="30.595" width="0" layer="19" extent="16-16"/>
-<wire x1="15" y1="30.242" x2="13.75" y2="30.242" width="0" layer="19" extent="16-16"/>
-<wire x1="4.365" y1="21.21" x2="10.83" y2="30.595" width="0" layer="19" extent="16-16"/>
-<wire x1="27.5" y1="26.55" x2="15" y2="30.242" width="0" layer="19" extent="16-16"/>
-<wire x1="20.8375" y1="4.926" x2="4.365" y2="21.21" width="0" layer="19" extent="16-16"/>
+<wire x1="10.58" y1="30.97" x2="3" y2="37.258" width="0" layer="19" extent="16-16"/>
+<wire x1="12.5" y1="28.117" x2="10.58" y2="30.97" width="0" layer="19" extent="16-16"/>
+<wire x1="13.75" y1="28.117" x2="12.5" y2="28.117" width="0" layer="19" extent="16-16"/>
+<wire x1="7.79" y1="24.365" x2="12.5" y2="28.117" width="0" layer="19" extent="16-16"/>
+<wire x1="24.5" y1="22.55" x2="13.75" y2="28.117" width="0" layer="19" extent="16-16"/>
+<wire x1="26.73" y1="23.5" x2="24.5" y2="22.55" width="0" layer="19" extent="16-16"/>
+<wire x1="20.8375" y1="4.926" x2="24.5" y2="22.55" width="0" layer="19" extent="16-16"/>
 <wire x1="20.508" y1="3.5" x2="20.8375" y2="4.926" width="0" layer="19" extent="16-16"/>
 <wire x1="39" y1="-6.177" x2="20.508" y2="3.5" width="0" layer="19" extent="1-16"/>
 <wire x1="42" y1="-5.8" x2="39" y2="-6.177" width="0" layer="19" extent="1-1"/>
-<wire x1="29.73" y1="27.5" x2="20.508" y2="3.5" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="FLASH_CS">
 <contactref element="U2" pad="1"/>
 <contactref element="R2" pad="1"/>
 <contactref element="U1" pad="43"/>
-<wire x1="4.17" y1="30.595" x2="20.25" y2="38.53" width="0" layer="19" extent="16-16"/>
-<wire x1="1.75" y1="36.242" x2="4.17" y2="30.595" width="0" layer="19" extent="16-16"/>
+<wire x1="3.92" y1="30.97" x2="18.25" y2="38.53" width="0" layer="19" extent="16-16"/>
+<wire x1="1.75" y1="36.242" x2="3.92" y2="30.97" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="FLASH_MOSI">
 <contactref element="U2" pad="5"/>
 <contactref element="U1" pad="29"/>
-<wire x1="10.83" y1="34.405" x2="16.47" y2="34.25" width="0" layer="19" extent="16-16"/>
+<wire x1="10.58" y1="34.78" x2="14.47" y2="34.25" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="FLASH_MISO">
 <contactref element="U2" pad="2"/>
 <contactref element="U1" pad="28"/>
-<wire x1="16.2905" y1="33.5705" x2="16.47" y2="33.75" width="0.127" layer="16"/>
-<wire x1="4.17" y1="31.865" x2="16.2905" y2="33.5705" width="0" layer="19" extent="16-16"/>
+<wire x1="14.2905" y1="33.5705" x2="14.47" y2="33.75" width="0.127" layer="16"/>
+<wire x1="3.92" y1="32.24" x2="14.2905" y2="33.5705" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$7">
 <contactref element="U2" pad="3"/>
 <contactref element="R4" pad="1"/>
-<wire x1="3" y1="36.242" x2="4.17" y2="33.135" width="0" layer="19" extent="16-16"/>
+<wire x1="3.92" y1="33.51" x2="3" y2="36.242" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$8">
 <contactref element="U2" pad="7"/>
 <contactref element="R5" pad="1"/>
-<wire x1="10.83" y1="31.865" x2="15" y2="31.258" width="0" layer="19" extent="16-16"/>
+<wire x1="13.75" y1="29.133" x2="10.58" y2="32.24" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="JTAG_TDI/FLASH_MOSI">
 <contactref element="U1" pad="27"/>
 <contactref element="U2" pad="6"/>
-<wire x1="10.83" y1="33.135" x2="16.47" y2="33.25" width="0" layer="19" extent="16-16"/>
+<wire x1="10.58" y1="33.51" x2="14.47" y2="33.25" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="SDA">
 <contactref element="U1" pad="5"/>
@@ -1573,7 +1660,7 @@ design rules under a new name.</description>
 <contactref element="U7" pad="1"/>
 <wire x1="20.75" y1="61.45" x2="25.126525" y2="83.46966875" width="0" layer="19" extent="16-16"/>
 <wire x1="22.742" y1="61" x2="20.75" y2="61.45" width="0" layer="19" extent="16-16"/>
-<wire x1="23.53" y1="35.75" x2="22.742" y2="61" width="0" layer="19" extent="16-16"/>
+<wire x1="21.53" y1="35.75" x2="22.742" y2="61" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="SCL">
 <contactref element="U1" pad="6"/>
@@ -1582,28 +1669,36 @@ design rules under a new name.</description>
 <contactref element="U7" pad="44"/>
 <wire x1="22.742" y1="62.25" x2="25.126525" y2="84.530328125" width="0" layer="19" extent="16-16"/>
 <wire x1="20.25" y1="61.45" x2="22.742" y2="62.25" width="0" layer="19" extent="16-16"/>
-<wire x1="23.53" y1="35.25" x2="20.25" y2="61.45" width="0" layer="19" extent="16-16"/>
+<wire x1="21.53" y1="35.25" x2="20.25" y2="61.45" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$1">
 <contactref element="U1" pad="2"/>
+<contactref element="C28" pad="2"/>
+<contactref element="L4" pad="2"/>
+<wire x1="24.617" y1="36.875" x2="23.375" y2="36.633" width="0" layer="19" extent="16-16"/>
+<wire x1="21.53" y1="37.25" x2="23.375" y2="36.633" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$3">
 <contactref element="U1" pad="1"/>
+<contactref element="C29" pad="2"/>
+<contactref element="L3" pad="2"/>
+<wire x1="23.375" y1="38.367" x2="24.617" y2="38.125" width="0" layer="19" extent="16-16"/>
+<wire x1="21.53" y1="37.75" x2="23.375" y2="38.367" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="MPU_INT">
 <contactref element="U1" pad="8"/>
 <contactref element="U4" pad="4"/>
-<wire x1="23.53" y1="34.25" x2="24" y2="72.35" width="0" layer="19" extent="16-16"/>
+<wire x1="21.53" y1="34.25" x2="24" y2="72.35" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="DBG_RX">
 <contactref element="TP2" pad="1"/>
 <contactref element="U1" pad="40"/>
-<wire x1="4" y1="42" x2="18.75" y2="38.53" width="0" layer="19" extent="16-16"/>
+<wire x1="4" y1="42" x2="16.75" y2="38.53" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="DBG_TX">
 <contactref element="TP1" pad="1"/>
 <contactref element="U1" pad="41"/>
-<wire x1="4" y1="44" x2="19.25" y2="38.53" width="0" layer="19" extent="16-16"/>
+<wire x1="4" y1="44" x2="17.25" y2="38.53" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$4">
 <contactref element="U3" pad="12"/>
@@ -1656,12 +1751,12 @@ design rules under a new name.</description>
 <signal name="I2S_CLK">
 <contactref element="M1" pad="4"/>
 <contactref element="U1" pad="31"/>
-<wire x1="20.8375" y1="5.748" x2="16.47" y2="35.25" width="0" layer="19" extent="16-16"/>
+<wire x1="20.8375" y1="5.748" x2="14.47" y2="35.25" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="I2S_DATIN">
 <contactref element="M1" pad="1"/>
 <contactref element="U1" pad="14"/>
-<wire x1="19.1625" y1="4.926" x2="22.25" y2="31.47" width="0" layer="19" extent="16-16"/>
+<wire x1="19.1625" y1="4.926" x2="20.25" y2="31.47" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="TC_INT">
 <contactref element="U7" pad="8"/>
@@ -1674,6 +1769,142 @@ design rules under a new name.</description>
 <contactref element="C24" pad="P$1"/>
 <wire x1="22.368809375" y1="80.711953125" x2="24.08195" y2="79.081946875" width="0" layer="19" extent="16-16"/>
 </signal>
+<signal name="N$14">
+<contactref element="C30" pad="1"/>
+<contactref element="L3" pad="1"/>
+<wire x1="23.375" y1="39.383" x2="23.375" y2="40.617" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="N$15">
+<contactref element="C29" pad="1"/>
+<contactref element="L4" pad="1"/>
+<contactref element="L5" pad="2"/>
+<wire x1="25.633" y1="36.875" x2="25.633" y2="38.125" width="0" layer="19" extent="16-16"/>
+<wire x1="26.867" y1="37.625" x2="25.633" y2="38.125" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="N$16">
+<contactref element="C31" pad="1"/>
+<contactref element="L5" pad="1"/>
+<contactref element="L6" pad="2"/>
+<wire x1="28.617" y1="37.625" x2="28.25" y2="38.867" width="0" layer="19" extent="16-16"/>
+<wire x1="27.883" y1="37.625" x2="28.617" y2="37.625" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="N$17">
+<contactref element="C35" pad="1"/>
+<contactref element="E1" pad="ANT"/>
+<contactref element="C32" pad="2"/>
+<wire x1="33.633" y1="37.625" x2="33.5" y2="36.508" width="0" layer="19" extent="16-16"/>
+<wire x1="34.55" y1="37.6" x2="33.633" y2="37.625" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="N$18">
+<contactref element="C33" pad="2"/>
+<contactref element="C32" pad="1"/>
+<wire x1="32.617" y1="37.625" x2="31.383" y2="37.625" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="N$19">
+<contactref element="L6" pad="1"/>
+<contactref element="C34" pad="2"/>
+<contactref element="C33" pad="1"/>
+<wire x1="30.367" y1="37.625" x2="32.125" y2="42.492" width="0" layer="19" extent="16-16"/>
+<wire x1="29.633" y1="37.625" x2="30.367" y2="37.625" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="N$20">
+<contactref element="A1" pad="P$3"/>
+<contactref element="C34" pad="1"/>
+<wire x1="32.125" y1="43.508" x2="32.125" y2="44.85" width="0" layer="19" extent="16-16"/>
+</signal>
+<signal name="PCAP_RX0">
+<contactref element="U7" pad="27"/>
+</signal>
+<signal name="PCAP_TX0">
+<contactref element="U7" pad="33"/>
+</signal>
+<signal name="PCAP_RX1">
+<contactref element="U7" pad="26"/>
+</signal>
+<signal name="PCAP_RX2">
+<contactref element="U7" pad="25"/>
+</signal>
+<signal name="PCAP_RX3">
+<contactref element="U7" pad="24"/>
+</signal>
+<signal name="PCAP_RX4">
+<contactref element="U7" pad="23"/>
+</signal>
+<signal name="PCAP_RX5">
+<contactref element="U7" pad="22"/>
+</signal>
+<signal name="PCAP_RX6">
+<contactref element="U7" pad="21"/>
+</signal>
+<signal name="PCAP_RX7">
+<contactref element="U7" pad="20"/>
+</signal>
+<signal name="PCAP_RX8">
+<contactref element="U7" pad="19"/>
+</signal>
+<signal name="PCAP_RX9">
+<contactref element="U7" pad="15"/>
+</signal>
+<signal name="PCAP_RX10">
+<contactref element="U7" pad="14"/>
+</signal>
+<signal name="PCAP_RX11">
+<contactref element="U7" pad="11"/>
+</signal>
+<signal name="PCAP_RX12">
+<contactref element="U7" pad="10"/>
+</signal>
+<signal name="PCAP_TX1">
+<contactref element="U7" pad="32"/>
+</signal>
+<signal name="PCAP_TX2">
+<contactref element="U7" pad="31"/>
+</signal>
+<signal name="PCAP_TX3">
+<contactref element="U7" pad="30"/>
+</signal>
+<signal name="PCAP_TX4">
+<contactref element="U7" pad="34"/>
+</signal>
+<signal name="PCAP_TX5">
+<contactref element="U7" pad="38"/>
+</signal>
+<signal name="PCAP_TX6">
+<contactref element="U7" pad="37"/>
+</signal>
+<signal name="PCAP_TX7">
+<contactref element="U7" pad="36"/>
+</signal>
+<signal name="PCAP_TX8">
+<contactref element="U7" pad="35"/>
+</signal>
+<signal name="PCAP_TX9">
+<contactref element="U7" pad="41"/>
+</signal>
+<signal name="PCAP_TX10">
+<contactref element="U7" pad="42"/>
+</signal>
+<signal name="PCAP_TX11">
+<contactref element="U7" pad="43"/>
+</signal>
+<signal name="PCAP_TX12">
+<contactref element="U7" pad="13"/>
+</signal>
+<signal name="PCAP_TX13">
+<contactref element="U7" pad="12"/>
+</signal>
+<signal name="PCAP_TX14">
+<contactref element="U7" pad="5"/>
+</signal>
+<signal name="PCAP_TX15">
+<contactref element="U7" pad="4"/>
+</signal>
+<signal name="PCAP_TX16">
+<contactref element="U7" pad="3"/>
+</signal>
+<signal name="PCAP_TX17">
+<contactref element="U7" pad="2"/>
+</signal>
 </signals>
 <mfgpreviewcolors>
 <mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
@@ -1684,4 +1915,11 @@ design rules under a new name.</description>
 </mfgpreviewcolors>
 </board>
 </drawing>
+<compatibility>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+</compatibility>
 </eagle>
