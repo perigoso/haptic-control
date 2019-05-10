@@ -711,6 +711,21 @@ temperature. Capacitance change is limited to ±15% from
 <smd name="2" x="0.508" y="0" dx="0.6" dy="0.6" layer="1"/>
 <text x="0.0475" y="1.0939" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
+<package name="_0806">
+<description>&lt;b&gt;0805&lt;/b&gt;</description>
+<wire x1="-0.41" y1="0.8" x2="0.41" y2="0.8" width="0.1016" layer="51"/>
+<wire x1="-0.41" y1="-0.8" x2="0.41" y2="-0.8" width="0.1016" layer="51"/>
+<wire x1="-1.794946875" y1="1.076921875" x2="1.79918125" y2="1.076921875" width="0.127" layer="21"/>
+<wire x1="1.79918125" y1="1.076921875" x2="1.79918125" y2="-1.0811625" width="0.127" layer="21"/>
+<wire x1="1.79918125" y1="-1.0811625" x2="-1.794946875" y2="-1.0811625" width="0.127" layer="21"/>
+<wire x1="-1.794946875" y1="-1.0811625" x2="-1.794946875" y2="1.076921875" width="0.127" layer="21"/>
+<rectangle x1="0.4064" y1="-0.85" x2="1.0564" y2="0.85" layer="51"/>
+<rectangle x1="-1.0668" y1="-0.85" x2="-0.4168" y2="0.85" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
+<smd name="1" x="-1.016" y="0" dx="1.2" dy="1.8" layer="1"/>
+<smd name="2" x="1.016" y="0" dx="1.2" dy="1.8" layer="1"/>
+<text x="0.0635" y="1.778" size="0.8" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="INDUCTOR_NC">
@@ -751,6 +766,15 @@ temperature. Capacitance change is limited to ±15% from
 </technologies>
 </device>
 <device name="_0402" package="_0402">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_0806" package="_0806">
 <connects>
 <connect gate="G$1" pin="P$1" pad="1"/>
 <connect gate="G$1" pin="P$2" pad="2"/>
@@ -3792,7 +3816,7 @@ Chip antenna with ground or secondary connection. Common with larger metal RF co
 <part name="C28" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" deviceset="MLCC" device="_0402" value="100n"/>
 <part name="C29" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" deviceset="MLCC" device="_0402" value="100n"/>
 <part name="C32" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" deviceset="MLCC" device="_0402" value="100n"/>
-<part name="L8" library="Passive Components &gt; Inductors, Chokes &amp; Coils" deviceset="INDUCTOR_NC" device="_0805" value="6u8"/>
+<part name="L8" library="Passive Components &gt; Inductors, Chokes &amp; Coils" deviceset="INDUCTOR_NC" device="_0806" value="6u8"/>
 <part name="L3" library="Passive Components &gt; Inductors, Chokes &amp; Coils" deviceset="INDUCTOR_NC" device="_0603" value="BLM18HE152SN1"/>
 <part name="C31" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" deviceset="MLCC" device="0603" value="22u"/>
 <part name="C36" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" deviceset="MLCC" device="0603" value="22u"/>
@@ -3946,7 +3970,7 @@ Chip antenna with ground or secondary connection. Common with larger metal RF co
 <part name="SUPPLY7" library="Utility &gt; Power Symbols" deviceset="VBAT" device=""/>
 <part name="P2" library="Connectors &gt; Other" deviceset="2P-PAD" device="_1X3.5"/>
 <part name="P1" library="Connectors &gt; Other" deviceset="2P-PAD" device="_1X3.5"/>
-<part name="L1" library="Passive Components &gt; Inductors, Chokes &amp; Coils" deviceset="INDUCTOR_NC" device="_0805" value="1u"/>
+<part name="L1" library="Passive Components &gt; Inductors, Chokes &amp; Coils" deviceset="INDUCTOR_NC" device="_0806" value="1u"/>
 <part name="C2" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" deviceset="MLCC" device="0603" value="4u7"/>
 <part name="C1" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" deviceset="MLCC" device="0603" value="1u"/>
 <part name="R4" library="Passive Components &gt; Resistors &gt; Chip Resistors" deviceset="RESISTOR" device="_0402" value="100k"/>
@@ -3962,7 +3986,7 @@ Chip antenna with ground or secondary connection. Common with larger metal RF co
 <part name="R3" library="Passive Components &gt; Resistors &gt; Chip Resistors" deviceset="RESISTOR" device="_0402" value="71.5k"/>
 <part name="GND4" library="Utility &gt; Power Symbols" deviceset="GND" device=""/>
 <part name="GND8" library="Utility &gt; Power Symbols" deviceset="GND" device=""/>
-<part name="L2" library="Passive Components &gt; Inductors, Chokes &amp; Coils" deviceset="INDUCTOR_NC" device="_0805" value="1u"/>
+<part name="L2" library="Passive Components &gt; Inductors, Chokes &amp; Coils" deviceset="INDUCTOR_NC" device="_0806" value="1u"/>
 <part name="C15" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" deviceset="MLCC" device="0603" value="4u7"/>
 <part name="C16" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" deviceset="MLCC" device="0603" value="1u"/>
 <part name="R5" library="Passive Components &gt; Resistors &gt; Chip Resistors" deviceset="RESISTOR" device="_0402" value="100k"/>
@@ -5113,8 +5137,9 @@ or to the ufl connector</text>
 <text x="307.34" y="99.06" size="3.81" layer="97">Clocks</text>
 <text x="12.7" y="76.2" size="3.81" layer="97">Antena &amp; Ballun</text>
 <text x="12.7" y="10.16" size="3.81" layer="97">Debugging</text>
-<text x="99.06" y="10.16" size="1.778" layer="97">When the Jumpers are Connected
-TagConnect is non compliant with the standard</text>
+<text x="82.296" y="8.128" size="1.778" layer="97">When the Jumpers are Connected
+TagConnect is non compliant with the standard
+The jumpers connect a debug uart to unused pins on TagConnect</text>
 <wire x1="144.526" y1="21.082" x2="141.732" y2="14.732" width="0.1524" layer="97"/>
 <wire x1="141.732" y1="14.732" x2="147.574" y2="14.732" width="0.1524" layer="97"/>
 <wire x1="147.574" y1="14.732" x2="144.526" y2="21.082" width="0.1524" layer="97"/>
