@@ -3794,6 +3794,282 @@ Chip antenna with ground or secondary connection. Common with larger metal RF co
 </deviceset>
 </devicesets>
 </library>
+<library name="Touch Panel">
+<packages>
+<package name="TOUCH_X_9P">
+<polygon width="0.127" layer="1">
+<vertex x="3" y="30.58"/>
+<vertex x="-3" y="30.58"/>
+<vertex x="0" y="27.58"/>
+</polygon>
+<polygon width="0.127" layer="1">
+<vertex x="3" y="23.78"/>
+<vertex x="-3" y="23.78"/>
+<vertex x="0" y="20.78"/>
+</polygon>
+<polygon width="0.127" layer="1">
+<vertex x="-3" y="23.78"/>
+<vertex x="3" y="23.78"/>
+<vertex x="0" y="26.78"/>
+</polygon>
+<polygon width="0.127" layer="1">
+<vertex x="3" y="16.98"/>
+<vertex x="-3" y="16.98"/>
+<vertex x="0" y="13.98"/>
+</polygon>
+<polygon width="0.127" layer="1">
+<vertex x="-3" y="16.98"/>
+<vertex x="3" y="16.98"/>
+<vertex x="0" y="19.98"/>
+</polygon>
+<polygon width="0.127" layer="1">
+<vertex x="3" y="10.18"/>
+<vertex x="-3" y="10.18"/>
+<vertex x="0" y="7.18"/>
+</polygon>
+<polygon width="0.127" layer="1">
+<vertex x="-3" y="10.18"/>
+<vertex x="3" y="10.18"/>
+<vertex x="0" y="13.18"/>
+</polygon>
+<polygon width="0.127" layer="1">
+<vertex x="3" y="3.38"/>
+<vertex x="-3" y="3.38"/>
+<vertex x="0" y="0.38"/>
+</polygon>
+<polygon width="0.127" layer="1">
+<vertex x="-3" y="3.38"/>
+<vertex x="3" y="3.38"/>
+<vertex x="0" y="6.38"/>
+</polygon>
+<polygon width="0.127" layer="1">
+<vertex x="3" y="-3.42"/>
+<vertex x="-3" y="-3.42"/>
+<vertex x="0" y="-6.42"/>
+</polygon>
+<polygon width="0.127" layer="1">
+<vertex x="-3" y="-3.42"/>
+<vertex x="3" y="-3.42"/>
+<vertex x="0" y="-0.42"/>
+</polygon>
+<polygon width="0.127" layer="1">
+<vertex x="3" y="-10.22"/>
+<vertex x="-3" y="-10.22"/>
+<vertex x="0" y="-13.22"/>
+</polygon>
+<polygon width="0.127" layer="1">
+<vertex x="-3" y="-10.22"/>
+<vertex x="3" y="-10.22"/>
+<vertex x="0" y="-7.22"/>
+</polygon>
+<polygon width="0.127" layer="1">
+<vertex x="3" y="-17.02"/>
+<vertex x="-3" y="-17.02"/>
+<vertex x="0" y="-20.02"/>
+</polygon>
+<polygon width="0.127" layer="1">
+<vertex x="-3" y="-17.02"/>
+<vertex x="3" y="-17.02"/>
+<vertex x="0" y="-14.02"/>
+</polygon>
+<polygon width="0.127" layer="1">
+<vertex x="3" y="-23.82"/>
+<vertex x="-3" y="-23.82"/>
+<vertex x="0" y="-26.82"/>
+</polygon>
+<polygon width="0.127" layer="1">
+<vertex x="-3" y="-23.82"/>
+<vertex x="3" y="-23.82"/>
+<vertex x="0" y="-20.82"/>
+</polygon>
+<polygon width="0.127" layer="1">
+<vertex x="-3" y="-30.62"/>
+<vertex x="3" y="-30.62"/>
+<vertex x="0" y="-27.62"/>
+</polygon>
+<pad name="P$2" x="0" y="29.4" drill="0.38" diameter="0.79" stop="no"/>
+<wire x1="0" y1="27.58" x2="0" y2="-27.62" width="0.15" layer="1"/>
+<wire x1="0" y1="-27.62" x2="0.001" y2="-28.222" width="0.127" layer="1"/>
+</package>
+<package name="TOUCH_Y_4P">
+<polygon width="0.127" layer="1">
+<vertex x="-13.56" y="3.02"/>
+<vertex x="-13.56" y="-2.98"/>
+<vertex x="-10.56" y="0.02"/>
+</polygon>
+<polygon width="0.127" layer="1">
+<vertex x="-6.76" y="3.02"/>
+<vertex x="-6.76" y="-2.98"/>
+<vertex x="-3.76" y="0.02"/>
+</polygon>
+<polygon width="0.127" layer="1">
+<vertex x="-6.76" y="-2.98"/>
+<vertex x="-6.76" y="3.02"/>
+<vertex x="-9.76" y="0.02"/>
+</polygon>
+<polygon width="0.127" layer="1">
+<vertex x="0.04" y="3.02"/>
+<vertex x="0.04" y="-2.98"/>
+<vertex x="3.04" y="0.02"/>
+</polygon>
+<polygon width="0.127" layer="1">
+<vertex x="0.04" y="-2.98"/>
+<vertex x="0.04" y="3.02"/>
+<vertex x="-2.96" y="0.02"/>
+</polygon>
+<polygon width="0.127" layer="1">
+<vertex x="6.84" y="3.02"/>
+<vertex x="6.84" y="-2.98"/>
+<vertex x="9.84" y="0.02"/>
+</polygon>
+<polygon width="0.127" layer="1">
+<vertex x="6.84" y="-2.98"/>
+<vertex x="6.84" y="3.02"/>
+<vertex x="3.84" y="0.02"/>
+</polygon>
+<polygon width="0.127" layer="1">
+<vertex x="13.64" y="-2.98"/>
+<vertex x="13.64" y="3.02"/>
+<vertex x="10.64" y="0.02"/>
+</polygon>
+<pad name="P$2" x="-12.4" y="0" drill="0.38" diameter="0.79" stop="no"/>
+<pad name="P$3" x="-6.8" y="0" drill="0.38" diameter="0.79" stop="no"/>
+<pad name="P$4" x="0" y="0" drill="0.35" diameter="0.79" stop="no"/>
+<pad name="P$5" x="6.8" y="0" drill="0.38" diameter="0.79" stop="no"/>
+<pad name="P$8" x="12.5" y="0" drill="0.38" diameter="0.79" stop="no"/>
+</package>
+</packages>
+<symbols>
+<symbol name="DIAMOND_X_9P">
+<pin name="1" x="0" y="33.02" visible="off" length="middle" rot="R270"/>
+<text x="3.556" y="29.464" size="1.778" layer="96" ratio="10" rot="SR90" align="top-left">&gt;VALUE</text>
+<text x="1.016" y="29.464" size="1.778" layer="95" ratio="10" rot="SR90" align="top-left">&gt;NAME</text>
+<polygon width="0.1524" layer="94">
+<vertex x="0" y="5.715"/>
+<vertex x="-2.54" y="3.175"/>
+<vertex x="0" y="0.635"/>
+<vertex x="2.54" y="3.175"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="0" y="12.065"/>
+<vertex x="-2.54" y="9.525"/>
+<vertex x="0" y="6.985"/>
+<vertex x="2.54" y="9.525"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="0" y="18.415"/>
+<vertex x="-2.54" y="15.875"/>
+<vertex x="0" y="13.335"/>
+<vertex x="2.54" y="15.875"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="0" y="-0.635"/>
+<vertex x="-2.54" y="-3.175"/>
+<vertex x="0" y="-5.715"/>
+<vertex x="2.54" y="-3.175"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="0" y="-6.985"/>
+<vertex x="-2.54" y="-9.525"/>
+<vertex x="0" y="-12.065"/>
+<vertex x="2.54" y="-9.525"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="0" y="-13.335"/>
+<vertex x="-2.54" y="-15.875"/>
+<vertex x="0" y="-18.415"/>
+<vertex x="2.54" y="-15.875"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="0" y="-19.685"/>
+<vertex x="-2.54" y="-22.225"/>
+<vertex x="0" y="-24.765"/>
+<vertex x="2.54" y="-22.225"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="0" y="-26.035"/>
+<vertex x="-2.54" y="-28.575"/>
+<vertex x="2.54" y="-28.575"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="0" y="24.765"/>
+<vertex x="-2.54" y="22.225"/>
+<vertex x="0" y="19.685"/>
+<vertex x="2.54" y="22.225"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="0" y="26.035"/>
+<vertex x="2.54" y="28.575"/>
+<vertex x="-2.54" y="28.575"/>
+</polygon>
+</symbol>
+<symbol name="DIAMOND_Y_4P">
+<pin name="1" x="-17.145" y="0" visible="off" length="middle"/>
+<text x="-14.097" y="1.27" size="1.778" layer="96" ratio="10" rot="SR180" align="top-left">&gt;VALUE</text>
+<text x="-14.097" y="3.81" size="1.778" layer="95" ratio="10" rot="SR180" align="top-left">&gt;NAME</text>
+<polygon width="0.1524" layer="94">
+<vertex x="10.16" y="0"/>
+<vertex x="12.7" y="-2.54"/>
+<vertex x="12.7" y="2.54"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="3.81" y="0"/>
+<vertex x="6.35" y="-2.54"/>
+<vertex x="8.89" y="0"/>
+<vertex x="6.35" y="2.54"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-2.54" y="0"/>
+<vertex x="0" y="-2.54"/>
+<vertex x="2.54" y="0"/>
+<vertex x="0" y="2.54"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-8.89" y="0"/>
+<vertex x="-6.35" y="-2.54"/>
+<vertex x="-3.81" y="0"/>
+<vertex x="-6.35" y="2.54"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-10.16" y="0"/>
+<vertex x="-12.7" y="2.54"/>
+<vertex x="-12.7" y="-2.54"/>
+</polygon>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="X_9P" prefix="MAT-X">
+<gates>
+<gate name="G$1" symbol="DIAMOND_X_9P" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TOUCH_X_9P">
+<connects>
+<connect gate="G$1" pin="1" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="Y_4P" prefix="MAT-Y">
+<gates>
+<gate name="G$1" symbol="DIAMOND_Y_4P" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TOUCH_Y_4P">
+<connects>
+<connect gate="G$1" pin="1" pad="P$2 P$3 P$4 P$5 P$8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 <attribute name="COMPANY" value="Tech4Home"/>
@@ -4080,6 +4356,19 @@ Chip antenna with ground or secondary connection. Common with larger metal RF co
 <part name="C12" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" deviceset="MLCC" device="_0402" value="470n"/>
 <part name="C11" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" deviceset="MLCC" device="_0402" value="470n"/>
 <part name="JP3" library="Utility &gt; Board" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK"/>
+<part name="MAT-X1" library="Touch Panel" deviceset="X_9P" device=""/>
+<part name="MAT-X2" library="Touch Panel" deviceset="X_9P" device=""/>
+<part name="MAT-X3" library="Touch Panel" deviceset="X_9P" device=""/>
+<part name="MAT-X4" library="Touch Panel" deviceset="X_9P" device=""/>
+<part name="MAT-Y1" library="Touch Panel" deviceset="Y_4P" device=""/>
+<part name="MAT-Y2" library="Touch Panel" deviceset="Y_4P" device=""/>
+<part name="MAT-Y3" library="Touch Panel" deviceset="Y_4P" device=""/>
+<part name="MAT-Y4" library="Touch Panel" deviceset="Y_4P" device=""/>
+<part name="MAT-Y5" library="Touch Panel" deviceset="Y_4P" device=""/>
+<part name="MAT-Y6" library="Touch Panel" deviceset="Y_4P" device=""/>
+<part name="MAT-Y7" library="Touch Panel" deviceset="Y_4P" device=""/>
+<part name="MAT-Y8" library="Touch Panel" deviceset="Y_4P" device=""/>
+<part name="MAT-Y9" library="Touch Panel" deviceset="Y_4P" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6817,6 +7106,58 @@ Capacitive Matrix</text>
 </instance>
 <instance part="GND79" gate="1" x="180.34" y="124.46" smashed="yes">
 <attribute name="VALUE" x="180.34" y="124.206" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="MAT-X1" gate="G$1" x="228.092" y="203.2" smashed="yes">
+<attribute name="VALUE" x="231.648" y="232.664" size="1.778" layer="96" ratio="10" rot="SR90" align="top-left"/>
+<attribute name="NAME" x="229.108" y="232.664" size="1.778" layer="95" ratio="10" rot="SR90" align="top-left"/>
+</instance>
+<instance part="MAT-X2" gate="G$1" x="234.442" y="203.2" smashed="yes">
+<attribute name="VALUE" x="237.998" y="232.664" size="1.778" layer="96" ratio="10" rot="SR90" align="top-left"/>
+<attribute name="NAME" x="235.458" y="232.664" size="1.778" layer="95" ratio="10" rot="SR90" align="top-left"/>
+</instance>
+<instance part="MAT-X3" gate="G$1" x="240.792" y="203.2" smashed="yes">
+<attribute name="VALUE" x="244.348" y="232.664" size="1.778" layer="96" ratio="10" rot="SR90" align="top-left"/>
+<attribute name="NAME" x="241.808" y="232.664" size="1.778" layer="95" ratio="10" rot="SR90" align="top-left"/>
+</instance>
+<instance part="MAT-X4" gate="G$1" x="247.142" y="203.2" smashed="yes">
+<attribute name="VALUE" x="250.698" y="232.664" size="1.778" layer="96" ratio="10" rot="SR90" align="top-left"/>
+<attribute name="NAME" x="248.158" y="232.664" size="1.778" layer="95" ratio="10" rot="SR90" align="top-left"/>
+</instance>
+<instance part="MAT-Y1" gate="G$1" x="237.617" y="228.6" smashed="yes">
+<attribute name="VALUE" x="223.52" y="229.87" size="1.778" layer="96" ratio="10" rot="SR180" align="top-left"/>
+<attribute name="NAME" x="223.52" y="232.41" size="1.778" layer="95" ratio="10" rot="SR180" align="top-left"/>
+</instance>
+<instance part="MAT-Y2" gate="G$1" x="237.617" y="222.25" smashed="yes">
+<attribute name="VALUE" x="223.52" y="223.52" size="1.778" layer="96" ratio="10" rot="SR180" align="top-left"/>
+<attribute name="NAME" x="223.52" y="226.06" size="1.778" layer="95" ratio="10" rot="SR180" align="top-left"/>
+</instance>
+<instance part="MAT-Y3" gate="G$1" x="237.617" y="215.9" smashed="yes">
+<attribute name="VALUE" x="223.52" y="217.17" size="1.778" layer="96" ratio="10" rot="SR180" align="top-left"/>
+<attribute name="NAME" x="223.52" y="219.71" size="1.778" layer="95" ratio="10" rot="SR180" align="top-left"/>
+</instance>
+<instance part="MAT-Y4" gate="G$1" x="237.617" y="209.55" smashed="yes">
+<attribute name="VALUE" x="223.52" y="210.82" size="1.778" layer="96" ratio="10" rot="SR180" align="top-left"/>
+<attribute name="NAME" x="223.52" y="213.36" size="1.778" layer="95" ratio="10" rot="SR180" align="top-left"/>
+</instance>
+<instance part="MAT-Y5" gate="G$1" x="237.617" y="203.2" smashed="yes">
+<attribute name="VALUE" x="223.52" y="204.47" size="1.778" layer="96" ratio="10" rot="SR180" align="top-left"/>
+<attribute name="NAME" x="223.52" y="207.01" size="1.778" layer="95" ratio="10" rot="SR180" align="top-left"/>
+</instance>
+<instance part="MAT-Y6" gate="G$1" x="237.617" y="196.85" smashed="yes">
+<attribute name="VALUE" x="223.52" y="198.12" size="1.778" layer="96" ratio="10" rot="SR180" align="top-left"/>
+<attribute name="NAME" x="223.52" y="200.66" size="1.778" layer="95" ratio="10" rot="SR180" align="top-left"/>
+</instance>
+<instance part="MAT-Y7" gate="G$1" x="237.617" y="190.5" smashed="yes">
+<attribute name="VALUE" x="223.52" y="191.77" size="1.778" layer="96" ratio="10" rot="SR180" align="top-left"/>
+<attribute name="NAME" x="223.52" y="194.31" size="1.778" layer="95" ratio="10" rot="SR180" align="top-left"/>
+</instance>
+<instance part="MAT-Y8" gate="G$1" x="237.617" y="184.15" smashed="yes">
+<attribute name="VALUE" x="223.52" y="185.42" size="1.778" layer="96" ratio="10" rot="SR180" align="top-left"/>
+<attribute name="NAME" x="223.52" y="187.96" size="1.778" layer="95" ratio="10" rot="SR180" align="top-left"/>
+</instance>
+<instance part="MAT-Y9" gate="G$1" x="237.617" y="177.8" smashed="yes">
+<attribute name="VALUE" x="223.52" y="179.07" size="1.778" layer="96" ratio="10" rot="SR180" align="top-left"/>
+<attribute name="NAME" x="223.52" y="181.61" size="1.778" layer="95" ratio="10" rot="SR180" align="top-left"/>
 </instance>
 </instances>
 <busses>
