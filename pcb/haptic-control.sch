@@ -3557,11 +3557,11 @@ Chip antenna with ground or secondary connection. Common with larger metal RF co
 <packages>
 <package name="FSR400-SHORT-TAIL">
 <circle x="0" y="0" radius="2.8" width="0.127" layer="21"/>
-<wire x1="-3.175" y1="-12" x2="-3.175" y2="-7.5" width="0.127" layer="21"/>
-<wire x1="-3.175" y1="-7.5" x2="-3.175" y2="-2.1" width="0.127" layer="21"/>
-<wire x1="3.175" y1="-12" x2="3.175" y2="-7.5" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="-14" x2="-3.175" y2="-9.5" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="-9.5" x2="-3.175" y2="-2.1" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-14" x2="3.175" y2="-9.5" width="0.127" layer="21"/>
 <circle x="0" y="0" radius="3.8" width="0.127" layer="21"/>
-<wire x1="3.175" y1="-7.5" x2="3.175" y2="-2.1" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-9.5" x2="3.175" y2="-2.1" width="0.127" layer="21"/>
 <wire x1="-1.6" y1="2.3" x2="0.9" y2="2.3" width="0.127" layer="21"/>
 <wire x1="-1.4" y1="2" x2="1.9" y2="2" width="0.127" layer="21"/>
 <wire x1="-2" y1="1.4" x2="2.4" y2="1.4" width="0.127" layer="21"/>
@@ -3578,22 +3578,22 @@ Chip antenna with ground or secondary connection. Common with larger metal RF co
 <wire x1="-2.75" y1="0.5" x2="2.2" y2="0.5" width="0.127" layer="21"/>
 <wire x1="-2.75" y1="-0.1" x2="2.3" y2="-0.1" width="0.127" layer="21"/>
 <wire x1="-2.7" y1="-0.7" x2="2.2" y2="-0.7" width="0.127" layer="21"/>
-<wire x1="-3.175" y1="-7.5" x2="3.175" y2="-7.5" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="-9.5" x2="3.175" y2="-9.5" width="0.127" layer="21"/>
 <polygon width="0.127" layer="21">
-<vertex x="-2" y="-12"/>
-<vertex x="-0.6" y="-12"/>
-<vertex x="-0.6" y="-7.5"/>
-<vertex x="-2" y="-7.5"/>
+<vertex x="-2" y="-14"/>
+<vertex x="-0.6" y="-14"/>
+<vertex x="-0.6" y="-9.5"/>
+<vertex x="-2" y="-9.5"/>
 </polygon>
 <polygon width="0.127" layer="21">
-<vertex x="0.6" y="-7.5"/>
-<vertex x="0.6" y="-12"/>
-<vertex x="2" y="-12"/>
-<vertex x="2" y="-7.5"/>
+<vertex x="0.6" y="-9.5"/>
+<vertex x="0.6" y="-14"/>
+<vertex x="2" y="-14"/>
+<vertex x="2" y="-9.5"/>
 </polygon>
-<wire x1="-3.175" y1="-12" x2="3.175" y2="-12" width="0.127" layer="21"/>
-<smd name="1" x="-1.3" y="-14.3" dx="1.4" dy="4.5" layer="1"/>
-<smd name="2" x="1.3" y="-14.3" dx="1.4" dy="4.5" layer="1"/>
+<wire x1="-3.175" y1="-14" x2="3.175" y2="-14" width="0.127" layer="21"/>
+<smd name="1" x="-1.3" y="-16.3" dx="1.4" dy="4.5" layer="1"/>
+<smd name="2" x="1.3" y="-16.3" dx="1.4" dy="4.5" layer="1"/>
 <text x="-3.2" y="4.7" size="1.27" layer="25">&gt;NAME</text>
 </package>
 </packages>
