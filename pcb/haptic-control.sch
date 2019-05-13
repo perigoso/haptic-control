@@ -8987,12 +8987,7 @@ Icharge = 234mA @ R1 = 1k2</text>
 <segment>
 <pinref part="R5" gate="G$1" pin="P$1"/>
 <pinref part="U1" gate="G$1" pin="EN@1"/>
-<wire x1="119.38" y1="205.74" x2="116.84" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="205.74" x2="114.3" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="205.74" x2="116.84" y2="208.28" width="0.1524" layer="91"/>
-<junction x="116.84" y="205.74"/>
-<wire x1="116.84" y1="208.28" x2="119.38" y2="208.28" width="0.1524" layer="91"/>
-<label x="119.38" y="208.28" size="0.889" layer="95" xref="yes"/>
+<wire x1="119.38" y1="205.74" x2="114.3" y2="205.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$30" class="0">
@@ -10289,13 +10284,6 @@ The jumpers connect a debug uart to unused pins on TagConnect</text>
 <pinref part="U5" gate="G$1" pin="DIO_14"/>
 </segment>
 </net>
-<net name="MPU_PWR" class="0">
-<segment>
-<wire x1="251.46" y1="111.76" x2="254" y2="111.76" width="0.1524" layer="91"/>
-<label x="254" y="111.76" size="0.889" layer="95" xref="yes"/>
-<pinref part="U5" gate="G$1" pin="DIO_15"/>
-</segment>
-</net>
 <net name="FSR_CH_P" class="0">
 <segment>
 <wire x1="208.28" y1="142.24" x2="205.74" y2="142.24" width="0.1524" layer="91"/>
@@ -10677,13 +10665,9 @@ Verify Unpowered VREF1 Behaviour</text>
 <pinref part="C48" gate="G$1" pin="P$1"/>
 <wire x1="279.4" y1="124.46" x2="279.4" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="279.4" y1="149.86" x2="269.24" y2="149.86" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="MPU_PWR" class="0">
-<segment>
-<wire x1="264.16" y1="147.32" x2="266.7" y2="147.32" width="0.1524" layer="91"/>
-<label x="266.7" y="147.32" size="0.889" layer="95" xref="yes"/>
 <pinref part="U9" gate="G$1" pin="EN"/>
+<wire x1="264.16" y1="147.32" x2="269.24" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="147.32" x2="269.24" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
