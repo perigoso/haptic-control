@@ -199,8 +199,8 @@
 <wire x1="-2" y1="90" x2="42" y2="90" width="0.127" layer="49" locked="yes"/>
 <wire x1="-2" y1="50" x2="42" y2="50" width="0.127" layer="49" locked="yes"/>
 <circle x="35" y="155" locked="yes" radius="4" width="0.127" layer="49"/>
-<circle x="5" y="5" radius="4" width="0.127" layer="49"/>
-<text x="5" y="5" size="1.5" layer="49" align="center">LRA</text>
+<circle x="5" y="5" locked="yes" radius="4" width="0.127" layer="49"/>
+<text x="5" y="5" locked="yes" size="1.5" layer="49" align="center">LRA</text>
 <text x="35" y="155" locked="yes" size="1.5" layer="49" align="center">LRA</text>
 <circle x="8.5" y="80" locked="yes" radius="4.5" width="0.127" layer="49"/>
 <circle x="8.5" y="60" locked="yes" radius="4.57905" width="0.127" layer="49"/>
@@ -3361,7 +3361,7 @@ design rules under a new name.</description>
 <element name="C21" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_1206" value="100u" x="9.45" y="55.15" smashed="yes" rot="MR180">
 <attribute name="NAME" x="9.4275" y="53.1387" size="0.762" layer="26" font="vector" ratio="10" rot="MR180" align="center"/>
 </element>
-<element name="U$1" library="Eletromechanical &gt; LRAs" package="G0825001" value="" x="5" y="5" smashed="yes" rot="MR170"/>
+<element name="U$1" library="Eletromechanical &gt; LRAs" package="G0825001" value="" x="5" y="5" locked="yes" smashed="yes" rot="MR170"/>
 <element name="U$2" library="Eletromechanical &gt; LRAs" package="G0825001" value="" x="35" y="155" locked="yes" smashed="yes" rot="MR102.5"/>
 <element name="P3" library="Connectors &gt; Other" package="PAD1X3_5MM-2P" value="2P-PAD_1X3.5" x="3.25" y="15.75" smashed="yes" rot="MR0">
 <attribute name="NAME" x="3.21" y="18.566" size="0.762" layer="26" font="vector" ratio="10" rot="MR0" align="center"/>
@@ -3392,7 +3392,7 @@ design rules under a new name.</description>
 <element name="C49" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_0402" value="100n" x="2" y="19.5" smashed="yes" rot="MR270">
 <attribute name="NAME" x="1.0061" y="19.4525" size="0.762" layer="26" font="vector" ratio="10" rot="MR270" align="center"/>
 </element>
-<element name="C53" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_0402" value="100n" x="21" y="159.25" locked="yes" smashed="yes" rot="MR180">
+<element name="C53" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="_0402" value="100n" x="21" y="159.35" locked="yes" smashed="yes" rot="MR180">
 <attribute name="NAME" x="21.0475" y="158.2561" locked="yes" size="0.762" layer="26" font="vector" ratio="10" rot="MR180" align="center"/>
 </element>
 <element name="C50" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" package="0603_WAVE" value="1u" x="3.15" y="28.8" smashed="yes" rot="MR180">
@@ -3668,7 +3668,7 @@ design rules under a new name.</description>
 <contactref element="U2" pad="25@3"/>
 <contactref element="U2" pad="25@5"/>
 <contactref element="U2" pad="25@1"/>
-<polygon width="0.1524" layer="16" isolate="0.3">
+<polygon width="0.1524" layer="16" isolate="0.3" locked="yes">
 <vertex x="2.5" y="90"/>
 <vertex x="2.5" y="156.6"/>
 <vertex x="37" y="156.6"/>
@@ -3694,7 +3694,7 @@ design rules under a new name.</description>
 <wire x1="0.5" y1="156.9718625" x2="0.5" y2="89" width="0.6" layer="1" locked="yes"/>
 <wire x1="36" y1="91" x2="36" y2="88.5" width="0.6096" layer="1"/>
 <wire x1="36" y1="91" x2="36" y2="88.5" width="0.6096" layer="16"/>
-<wire x1="18.7" y1="158.2" x2="21.508" y2="159.25" width="0" layer="19" extent="16-16"/>
+<wire x1="18.7" y1="158.2" x2="21.508" y2="159.35" width="0" layer="19" extent="16-16"/>
 <wire x1="15.896625" y1="158.7" x2="18.7" y2="158.2" width="0" layer="19" extent="16-16"/>
 <wire x1="10.177" y1="157.5" x2="14.3" y2="158.7" width="0" layer="19" extent="16-16"/>
 <wire x1="14.140790625" y1="86.859209375" x2="0.5" y2="89" width="0" layer="19" extent="1-16"/>
@@ -4051,12 +4051,10 @@ design rules under a new name.</description>
 <wire x1="20.2" y1="71.48" x2="20.742" y2="73.25" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$11">
-<contactref element="U9" pad="8"/>
 <contactref element="U9" pad="7"/>
 <contactref element="R28" pad="1"/>
 <contactref element="C48" pad="1"/>
-<wire x1="19.75" y1="61.45" x2="19.25" y2="61.45" width="0" layer="19" extent="16-16"/>
-<wire x1="17.25" y1="61.008" x2="19.25" y2="61.45" width="0" layer="19" extent="16-16"/>
+<wire x1="17.25" y1="61.008" x2="19.75" y2="61.45" width="0" layer="19" extent="16-16"/>
 <wire x1="17.25" y1="62.492" x2="17.25" y2="61.008" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="I2S_CLK">
@@ -4428,9 +4426,6 @@ design rules under a new name.</description>
 <contactref element="U2" pad="4"/>
 <contactref element="C19" pad="P$1"/>
 <wire x1="18.7" y1="159.2" x2="18.2" y2="159.2" width="0.1524" layer="16" locked="yes"/>
-<wire x1="18.7" y1="159.2" x2="19.7" y2="159.2" width="0.1524" layer="16" locked="yes"/>
-<wire x1="19.7" y1="159.2" x2="19.8" y2="159.3" width="0.1524" layer="16" locked="yes"/>
-<wire x1="19.8" y1="159.3" x2="20.442" y2="159.3" width="0.1524" layer="16" locked="yes"/>
 <wire x1="20.442" y1="159.3" x2="20.492" y2="159.25" width="0.1524" layer="16" locked="yes"/>
 <wire x1="18.7" y1="159.2" x2="17.3" y2="159.2" width="0.3048" layer="16" locked="yes"/>
 <wire x1="17.3" y1="159.2" x2="17" y2="158.9" width="0.3048" layer="16" locked="yes"/>
@@ -4445,25 +4440,30 @@ design rules under a new name.</description>
 <wire x1="14.5" y1="158.5" x2="3.5" y2="158.5" width="0.6" layer="1" locked="yes"/>
 <wire x1="3.5" y1="158.5" x2="1.5" y2="156.5" width="0.6" layer="1" locked="yes"/>
 <wire x1="1.5" y1="156.5" x2="1.5" y2="89" width="0.6" layer="1" locked="yes"/>
-<wire x1="32.477" y1="57.6" x2="32.292" y2="59.1" width="0" layer="19" extent="16-16"/>
-<wire x1="32.55" y1="56.1" x2="32.477" y2="57.6" width="0" layer="19" extent="16-16"/>
-<wire x1="31.8" y1="55.35" x2="32.55" y2="56.1" width="0" layer="19" extent="16-16"/>
-<wire x1="30.3" y1="55.277" x2="31.8" y2="55.35" width="0" layer="19" extent="16-16"/>
+<wire x1="18.7" y1="159.2" x2="19.7" y2="159.2" width="0.3048" layer="16" locked="yes"/>
+<wire x1="19.7" y1="159.2" x2="19.9" y2="159.4" width="0.3048" layer="16" locked="yes"/>
+<wire x1="19.9" y1="159.4" x2="20.442" y2="159.4" width="0.3048" layer="16" locked="yes"/>
+<wire x1="20.442" y1="159.4" x2="20.492" y2="159.35" width="0.3048" layer="16"/>
+<wire x1="20.492" y1="159.35" x2="20.442" y2="159.3" width="0" layer="19" extent="16-16"/>
+<wire x1="11.708" y1="57.9" x2="1.5" y2="89" width="0" layer="19" extent="1-16"/>
+<wire x1="13.3" y1="54.358" x2="11.708" y2="57.9" width="0" layer="19" extent="16-16"/>
+<wire x1="8.18" y1="55.15" x2="11.708" y2="57.9" width="0" layer="19" extent="16-16"/>
+<wire x1="6.1652" y1="52.15" x2="8.18" y2="55.15" width="0" layer="19" extent="16-16"/>
+<wire x1="9.45" y1="43.777" x2="6.1652" y2="52.15" width="0" layer="19" extent="16-16"/>
+<wire x1="9.25" y1="41.75" x2="9.45" y2="43.777" width="0" layer="19" extent="16-16"/>
+<wire x1="30.3" y1="55.277" x2="13.3" y2="54.358" width="0" layer="19" extent="16-16"/>
+<wire x1="31.8" y1="55.35" x2="30.3" y2="55.277" width="0" layer="19" extent="16-16"/>
+<wire x1="32.55" y1="56.1" x2="31.8" y2="55.35" width="0" layer="19" extent="16-16"/>
+<wire x1="32.477" y1="57.6" x2="32.55" y2="56.1" width="0" layer="19" extent="16-16"/>
+<wire x1="32.292" y1="59.1" x2="32.477" y2="57.6" width="0" layer="19" extent="16-16"/>
 <wire x1="30.3" y1="52.923" x2="30.3" y2="55.277" width="0" layer="19" extent="16-16"/>
 <wire x1="31.8" y1="52.85" x2="30.3" y2="52.923" width="0" layer="19" extent="16-16"/>
 <wire x1="32.55" y1="52.1" x2="31.8" y2="52.85" width="0" layer="19" extent="16-16"/>
 <wire x1="32.477" y1="50.6" x2="32.55" y2="52.1" width="0" layer="19" extent="16-16"/>
 <wire x1="32.292" y1="49.1" x2="32.477" y2="50.6" width="0" layer="19" extent="16-16"/>
-<wire x1="13.3" y1="54.358" x2="30.3" y2="55.277" width="0" layer="19" extent="16-16"/>
-<wire x1="11.708" y1="57.9" x2="13.3" y2="54.358" width="0" layer="19" extent="16-16"/>
-<wire x1="8.18" y1="55.15" x2="11.708" y2="57.9" width="0" layer="19" extent="16-16"/>
-<wire x1="6.1652" y1="52.15" x2="8.18" y2="55.15" width="0" layer="19" extent="16-16"/>
-<wire x1="9.45" y1="43.777" x2="6.1652" y2="52.15" width="0" layer="19" extent="16-16"/>
-<wire x1="9.25" y1="41.75" x2="9.45" y2="43.777" width="0" layer="19" extent="16-16"/>
 <wire x1="4.25" y1="21.8" x2="9.25" y2="41.75" width="0" layer="19" extent="16-16"/>
 <wire x1="2.25" y1="21.8" x2="4.25" y2="21.8" width="0" layer="19" extent="16-16"/>
 <wire x1="2" y1="20.008" x2="2.25" y2="21.8" width="0" layer="19" extent="16-16"/>
-<wire x1="1.5" y1="89" x2="11.708" y2="57.9" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="GBAT">
 <contactref element="U4" pad="3"/>
@@ -4523,7 +4523,9 @@ design rules under a new name.</description>
 <contactref element="R5" pad="1"/>
 <contactref element="U1" pad="9"/>
 <contactref element="U5" pad="21"/>
+<contactref element="U9" pad="8"/>
 <wire x1="33.55" y1="56.1" x2="33.308" y2="59.1" width="0" layer="19" extent="16-16"/>
+<wire x1="19.25" y1="61.45" x2="33.308" y2="59.1" width="0" layer="19" extent="16-16"/>
 <wire x1="16.47" y1="27.375" x2="33.55" y2="56.1" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$30">
@@ -4563,16 +4565,16 @@ design rules under a new name.</description>
 <signal name="N$34">
 <contactref element="U11" pad="7"/>
 <contactref element="P4" pad="1"/>
-<wire x1="18.7" y1="158.7" x2="22.2" y2="158.7" width="0.1524" layer="16" locked="yes"/>
-<wire x1="22.546" y1="159.046" x2="24.75" y2="159.046" width="0.1524" layer="16" locked="yes"/>
-<wire x1="22.2" y1="158.7" x2="22.546" y2="159.046" width="0.1524" layer="16" locked="yes"/>
+<wire x1="18.7" y1="158.7" x2="22.2" y2="158.7" width="0.3048" layer="16" locked="yes"/>
+<wire x1="22.546" y1="159.046" x2="24.75" y2="159.046" width="0.3048" layer="16" locked="yes"/>
+<wire x1="22.2" y1="158.7" x2="22.546" y2="159.046" width="0.3048" layer="16" locked="yes"/>
 </signal>
 <signal name="N$35">
 <contactref element="U11" pad="9"/>
 <contactref element="P4" pad="2"/>
-<wire x1="18.7" y1="157.7" x2="21.8" y2="157.7" width="0.1524" layer="16" locked="yes"/>
-<wire x1="22.546" y1="156.954" x2="24.75" y2="156.954" width="0.1524" layer="16" locked="yes"/>
-<wire x1="21.8" y1="157.7" x2="22.546" y2="156.954" width="0.1524" layer="16" locked="yes"/>
+<wire x1="18.7" y1="157.7" x2="21.8" y2="157.7" width="0.3048" layer="16" locked="yes"/>
+<wire x1="22.546" y1="156.954" x2="24.75" y2="156.954" width="0.3048" layer="16" locked="yes"/>
+<wire x1="21.8" y1="157.7" x2="22.546" y2="156.954" width="0.3048" layer="16" locked="yes"/>
 </signal>
 <signal name="N$36">
 <contactref element="U10" pad="1"/>

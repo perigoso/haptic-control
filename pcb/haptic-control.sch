@@ -10669,9 +10669,6 @@ Verify Unpowered VREF1 Behaviour</text>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="U9" gate="G$1" pin="EN"/>
-<wire x1="264.16" y1="147.32" x2="269.24" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="269.24" y1="147.32" x2="269.24" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="U9" gate="G$1" pin="VREF2"/>
 <wire x1="264.16" y1="149.86" x2="269.24" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="269.24" y1="149.86" x2="269.24" y2="152.4" width="0.1524" layer="91"/>
@@ -10680,6 +10677,13 @@ Verify Unpowered VREF1 Behaviour</text>
 <pinref part="C48" gate="G$1" pin="P$1"/>
 <wire x1="279.4" y1="124.46" x2="279.4" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="279.4" y1="149.86" x2="269.24" y2="149.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="MPU_PWR" class="0">
+<segment>
+<wire x1="264.16" y1="147.32" x2="266.7" y2="147.32" width="0.1524" layer="91"/>
+<label x="266.7" y="147.32" size="0.889" layer="95" xref="yes"/>
+<pinref part="U9" gate="G$1" pin="EN"/>
 </segment>
 </net>
 </nets>
