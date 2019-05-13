@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.2">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -10127,11 +10127,6 @@ The jumpers connect a debug uart to unused pins on TagConnect</text>
 <pinref part="R22" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
-<label x="284.48" y="154.94" size="0.889" layer="95" rot="R270" xref="yes"/>
-<wire x1="284.48" y1="157.48" x2="284.48" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="R23" gate="G$1" pin="P$1"/>
-</segment>
-<segment>
 <label x="254" y="127" size="0.889" layer="95" xref="yes"/>
 <wire x1="251.46" y1="127" x2="254" y2="127" width="0.1524" layer="91"/>
 <pinref part="U5" gate="G$1" pin="DIO_9"/>
@@ -10227,20 +10222,6 @@ The jumpers connect a debug uart to unused pins on TagConnect</text>
 <pinref part="C24" gate="G$1" pin="P$2"/>
 </segment>
 </net>
-<net name="I2S_CLK" class="0">
-<segment>
-<wire x1="251.46" y1="99.06" x2="254" y2="99.06" width="0.1524" layer="91"/>
-<label x="254" y="99.06" size="0.889" layer="95" xref="yes"/>
-<pinref part="U5" gate="G$1" pin="DIO_20"/>
-</segment>
-</net>
-<net name="I2S_DATIN" class="0">
-<segment>
-<wire x1="251.46" y1="101.6" x2="254" y2="101.6" width="0.1524" layer="91"/>
-<label x="254" y="101.6" size="0.889" layer="95" xref="yes"/>
-<pinref part="U5" gate="G$1" pin="DIO_19"/>
-</segment>
-</net>
 <net name="N$12" class="0">
 <segment>
 <pinref part="C26" gate="G$1" pin="I"/>
@@ -10277,39 +10258,25 @@ The jumpers connect a debug uart to unused pins on TagConnect</text>
 <wire x1="124.46" y1="30.48" x2="127" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="1V8_PG" class="0">
+<net name="FSR_1" class="0">
 <segment>
-<wire x1="251.46" y1="114.3" x2="254" y2="114.3" width="0.1524" layer="91"/>
-<label x="254" y="114.3" size="0.889" layer="95" rot="MR180" xref="yes"/>
-<pinref part="U5" gate="G$1" pin="DIO_14"/>
+<wire x1="208.28" y1="147.32" x2="205.74" y2="147.32" width="0.1524" layer="91"/>
+<label x="205.74" y="147.32" size="0.889" layer="95" rot="R180" xref="yes"/>
+<pinref part="U5" gate="G$1" pin="DIO_24"/>
 </segment>
 </net>
-<net name="FSR_CH_P" class="0">
-<segment>
-<wire x1="208.28" y1="142.24" x2="205.74" y2="142.24" width="0.1524" layer="91"/>
-<label x="205.74" y="142.24" size="0.889" layer="95" rot="R180" xref="yes"/>
-<pinref part="U5" gate="G$1" pin="DIO_26"/>
-</segment>
-</net>
-<net name="FSR_CH_N" class="0">
+<net name="FSR_2" class="0">
 <segment>
 <wire x1="208.28" y1="144.78" x2="205.74" y2="144.78" width="0.1524" layer="91"/>
 <label x="205.74" y="144.78" size="0.889" layer="95" rot="R180" xref="yes"/>
 <pinref part="U5" gate="G$1" pin="DIO_25"/>
 </segment>
 </net>
-<net name="FSR_VOL_P" class="0">
+<net name="FSR_3" class="0">
 <segment>
-<wire x1="208.28" y1="139.7" x2="205.74" y2="139.7" width="0.1524" layer="91"/>
-<label x="205.74" y="139.7" size="0.889" layer="95" rot="R180" xref="yes"/>
-<pinref part="U5" gate="G$1" pin="DIO_27"/>
-</segment>
-</net>
-<net name="FSR_VOL_N" class="0">
-<segment>
-<wire x1="208.28" y1="147.32" x2="205.74" y2="147.32" width="0.1524" layer="91"/>
-<label x="205.74" y="147.32" size="0.889" layer="95" rot="R180" xref="yes"/>
-<pinref part="U5" gate="G$1" pin="DIO_24"/>
+<wire x1="208.28" y1="142.24" x2="205.74" y2="142.24" width="0.1524" layer="91"/>
+<label x="205.74" y="142.24" size="0.889" layer="95" rot="R180" xref="yes"/>
+<pinref part="U5" gate="G$1" pin="DIO_26"/>
 </segment>
 </net>
 <net name="FLASH_SCK" class="0">
@@ -10324,46 +10291,16 @@ The jumpers connect a debug uart to unused pins on TagConnect</text>
 <pinref part="U5" gate="G$1" pin="DIO_5"/>
 </segment>
 </net>
-<net name="!QI_CHG" class="0">
-<segment>
-<wire x1="251.46" y1="119.38" x2="254" y2="119.38" width="0.1524" layer="91"/>
-<label x="254" y="119.38" size="0.889" layer="95" xref="yes"/>
-<pinref part="U5" gate="G$1" pin="DIO_12"/>
-</segment>
-</net>
-<net name="QI_CTRL" class="0">
-<segment>
-<wire x1="251.46" y1="116.84" x2="254" y2="116.84" width="0.1524" layer="91"/>
-<label x="254" y="116.84" size="0.889" layer="95" xref="yes"/>
-<pinref part="U5" gate="G$1" pin="DIO_13"/>
-</segment>
-</net>
-<net name="MPU_INT" class="0">
-<segment>
-<wire x1="251.46" y1="104.14" x2="254" y2="104.14" width="0.1524" layer="91"/>
-<label x="254" y="104.14" size="0.889" layer="95" xref="yes"/>
-<pinref part="U5" gate="G$1" pin="DIO_18"/>
-</segment>
-</net>
-<net name="TC_!RESET" class="0">
-<segment>
-<wire x1="251.46" y1="96.52" x2="254" y2="96.52" width="0.1524" layer="91"/>
-<label x="254" y="96.52" size="0.889" layer="95" xref="yes"/>
-<pinref part="U5" gate="G$1" pin="DIO_21"/>
-</segment>
-</net>
-<net name="TC_INT" class="0">
-<segment>
-<wire x1="251.46" y1="93.98" x2="254" y2="93.98" width="0.1524" layer="91"/>
-<label x="254" y="93.98" size="0.889" layer="95" xref="yes"/>
-<pinref part="U5" gate="G$1" pin="DIO_22"/>
-</segment>
-</net>
 <net name="SDA" class="0">
 <segment>
 <label x="254" y="124.46" size="0.889" layer="95" xref="yes"/>
 <wire x1="251.46" y1="124.46" x2="254" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="U5" gate="G$1" pin="DIO_10"/>
+</segment>
+<segment>
+<label x="284.48" y="154.94" size="0.889" layer="95" rot="R270" xref="yes"/>
+<wire x1="284.48" y1="157.48" x2="284.48" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="R23" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="VBAT_SNS" class="0">
@@ -10373,11 +10310,74 @@ The jumpers connect a debug uart to unused pins on TagConnect</text>
 <pinref part="U5" gate="G$1" pin="DIO_23"/>
 </segment>
 </net>
+<net name="FSR_4" class="0">
+<segment>
+<wire x1="208.28" y1="139.7" x2="205.74" y2="139.7" width="0.1524" layer="91"/>
+<label x="205.74" y="139.7" size="0.889" layer="95" rot="R180" xref="yes"/>
+<pinref part="U5" gate="G$1" pin="DIO_27"/>
+</segment>
+</net>
+<net name="1V8_PG" class="0">
+<segment>
+<wire x1="208.28" y1="137.16" x2="205.74" y2="137.16" width="0.1524" layer="91"/>
+<label x="205.74" y="137.16" size="0.889" layer="95" rot="MR0" xref="yes"/>
+<pinref part="U5" gate="G$1" pin="DIO_28"/>
+</segment>
+</net>
+<net name="I2S_CLK" class="0">
+<segment>
+<wire x1="251.46" y1="96.52" x2="254" y2="96.52" width="0.1524" layer="91"/>
+<label x="254" y="96.52" size="0.889" layer="95" xref="yes"/>
+<pinref part="U5" gate="G$1" pin="DIO_21"/>
+</segment>
+</net>
+<net name="I2S_DATIN" class="0">
+<segment>
+<wire x1="251.46" y1="99.06" x2="254" y2="99.06" width="0.1524" layer="91"/>
+<label x="254" y="99.06" size="0.889" layer="95" xref="yes"/>
+<pinref part="U5" gate="G$1" pin="DIO_20"/>
+</segment>
+</net>
+<net name="MPU_INT" class="0">
+<segment>
+<wire x1="251.46" y1="93.98" x2="254" y2="93.98" width="0.1524" layer="91"/>
+<label x="254" y="93.98" size="0.889" layer="95" xref="yes"/>
+<pinref part="U5" gate="G$1" pin="DIO_22"/>
+</segment>
+</net>
+<net name="TC_!RESET" class="0">
+<segment>
+<wire x1="251.46" y1="104.14" x2="254" y2="104.14" width="0.1524" layer="91"/>
+<label x="254" y="104.14" size="0.889" layer="95" xref="yes"/>
+<pinref part="U5" gate="G$1" pin="DIO_18"/>
+</segment>
+</net>
+<net name="TC_INT" class="0">
+<segment>
+<wire x1="251.46" y1="101.6" x2="254" y2="101.6" width="0.1524" layer="91"/>
+<label x="254" y="101.6" size="0.889" layer="95" xref="yes"/>
+<pinref part="U5" gate="G$1" pin="DIO_19"/>
+</segment>
+</net>
+<net name="!QI_CHG" class="0">
+<segment>
+<wire x1="251.46" y1="116.84" x2="254" y2="116.84" width="0.1524" layer="91"/>
+<label x="254" y="116.84" size="0.889" layer="95" xref="yes"/>
+<pinref part="U5" gate="G$1" pin="DIO_13"/>
+</segment>
+</net>
+<net name="QI_CTRL" class="0">
+<segment>
+<wire x1="251.46" y1="119.38" x2="254" y2="119.38" width="0.1524" layer="91"/>
+<label x="254" y="119.38" size="0.889" layer="95" xref="yes"/>
+<pinref part="U5" gate="G$1" pin="DIO_12"/>
+</segment>
+</net>
 <net name="LRA_EN" class="0">
 <segment>
-<wire x1="251.46" y1="147.32" x2="254" y2="147.32" width="0.1524" layer="91"/>
-<label x="254" y="147.32" size="0.889" layer="95" xref="yes"/>
-<pinref part="U5" gate="G$1" pin="DIO_1"/>
+<wire x1="251.46" y1="129.54" x2="254" y2="129.54" width="0.1524" layer="91"/>
+<label x="254" y="129.54" size="0.889" layer="95" xref="yes"/>
+<pinref part="U5" gate="G$1" pin="DIO_8"/>
 </segment>
 </net>
 </nets>
@@ -11694,7 +11694,7 @@ Capacitive Matrix</text>
 <pinref part="U11" gate="G$1" pin="EN"/>
 </segment>
 </net>
-<net name="FSR_CH_P" class="0">
+<net name="FSR_1" class="0">
 <segment>
 <wire x1="40.64" y1="144.78" x2="40.64" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="R30" gate="G$1" pin="P$2"/>
@@ -11710,7 +11710,7 @@ Capacitive Matrix</text>
 <wire x1="38.1" y1="144.78" x2="40.64" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="FSR_CH_N" class="0">
+<net name="FSR_2" class="0">
 <segment>
 <wire x1="83.82" y1="144.78" x2="83.82" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="R32" gate="G$1" pin="P$2"/>
@@ -11726,7 +11726,7 @@ Capacitive Matrix</text>
 <wire x1="81.28" y1="144.78" x2="83.82" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="FSR_VOL_P" class="0">
+<net name="FSR_3" class="0">
 <segment>
 <wire x1="124.46" y1="144.78" x2="127" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="127" y1="144.78" x2="127" y2="142.24" width="0.1524" layer="91"/>
@@ -11742,7 +11742,7 @@ Capacitive Matrix</text>
 <junction x="134.62" y="142.24"/>
 </segment>
 </net>
-<net name="FSR_VOL_N" class="0">
+<net name="FSR_4" class="0">
 <segment>
 <wire x1="170.18" y1="144.78" x2="172.72" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="144.78" x2="172.72" y2="142.24" width="0.1524" layer="91"/>
