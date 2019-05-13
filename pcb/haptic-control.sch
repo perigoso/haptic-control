@@ -10830,13 +10830,13 @@ Capacitive Matrix</text>
 <attribute name="NAME" x="132.08" y="229.616" size="1.27" layer="95"/>
 <attribute name="VALUE" x="132.08" y="227.33" size="1.27" layer="96"/>
 </instance>
-<instance part="R29" gate="G$1" x="30.48" y="147.32" smashed="yes" rot="R90">
-<attribute name="NAME" x="10.16" y="157.48" size="1.778" layer="95" rot="R180" align="bottom-right"/>
-<attribute name="VALUE" x="10.16" y="154.94" size="1.778" layer="96" rot="R180" align="bottom-right"/>
+<instance part="R29" gate="G$1" x="30.48" y="147.32" smashed="yes" rot="MR270">
+<attribute name="NAME" x="10.16" y="152.4" size="1.778" layer="95" rot="MR0" align="bottom-right"/>
+<attribute name="VALUE" x="10.16" y="154.94" size="1.778" layer="96" rot="MR0" align="bottom-right"/>
 </instance>
-<instance part="R31" gate="G$1" x="73.66" y="147.32" smashed="yes" rot="R90">
-<attribute name="NAME" x="53.34" y="157.48" size="1.778" layer="95" rot="R180" align="bottom-right"/>
-<attribute name="VALUE" x="53.34" y="154.94" size="1.778" layer="96" rot="R180" align="bottom-right"/>
+<instance part="R31" gate="G$1" x="73.66" y="147.32" smashed="yes" rot="MR270">
+<attribute name="NAME" x="53.34" y="152.4" size="1.778" layer="95" rot="MR0" align="bottom-right"/>
+<attribute name="VALUE" x="53.34" y="154.94" size="1.778" layer="96" rot="MR0" align="bottom-right"/>
 </instance>
 <instance part="R33" gate="G$1" x="116.84" y="147.32" smashed="yes" rot="R90">
 <attribute name="NAME" x="96.52" y="157.48" size="1.778" layer="95" rot="R180" align="bottom-right"/>
@@ -10966,57 +10966,57 @@ Capacitive Matrix</text>
 <instance part="GND79" gate="1" x="180.34" y="124.46" smashed="yes">
 <attribute name="VALUE" x="180.34" y="124.206" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="MAT-X1" gate="G$1" x="228.092" y="203.2" smashed="yes">
-<attribute name="VALUE" x="231.648" y="232.664" size="1.778" layer="96" ratio="10" rot="SR90" align="top-left"/>
-<attribute name="NAME" x="229.108" y="232.664" size="1.778" layer="95" ratio="10" rot="SR90" align="top-left"/>
+<instance part="MAT-X1" gate="G$1" x="140.208" y="63.5" smashed="yes" rot="R180">
+<attribute name="VALUE" x="136.652" y="34.036" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="139.192" y="34.036" size="1.778" layer="95" ratio="10" rot="SR270" align="top-left"/>
 </instance>
-<instance part="MAT-X2" gate="G$1" x="234.442" y="203.2" smashed="yes">
-<attribute name="VALUE" x="237.998" y="232.664" size="1.778" layer="96" ratio="10" rot="SR90" align="top-left"/>
-<attribute name="NAME" x="235.458" y="232.664" size="1.778" layer="95" ratio="10" rot="SR90" align="top-left"/>
+<instance part="MAT-X2" gate="G$1" x="133.858" y="63.5" smashed="yes" rot="R180">
+<attribute name="VALUE" x="130.302" y="34.036" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="132.842" y="34.036" size="1.778" layer="95" ratio="10" rot="SR270" align="top-left"/>
 </instance>
-<instance part="MAT-X3" gate="G$1" x="240.792" y="203.2" smashed="yes">
-<attribute name="VALUE" x="244.348" y="232.664" size="1.778" layer="96" ratio="10" rot="SR90" align="top-left"/>
-<attribute name="NAME" x="241.808" y="232.664" size="1.778" layer="95" ratio="10" rot="SR90" align="top-left"/>
+<instance part="MAT-X3" gate="G$1" x="127.508" y="63.5" smashed="yes" rot="R180">
+<attribute name="VALUE" x="123.952" y="34.036" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="126.492" y="34.036" size="1.778" layer="95" ratio="10" rot="SR270" align="top-left"/>
 </instance>
-<instance part="MAT-X4" gate="G$1" x="247.142" y="203.2" smashed="yes">
-<attribute name="VALUE" x="250.698" y="232.664" size="1.778" layer="96" ratio="10" rot="SR90" align="top-left"/>
-<attribute name="NAME" x="248.158" y="232.664" size="1.778" layer="95" ratio="10" rot="SR90" align="top-left"/>
+<instance part="MAT-X4" gate="G$1" x="121.158" y="63.5" smashed="yes" rot="R180">
+<attribute name="VALUE" x="117.602" y="34.036" size="1.778" layer="96" ratio="10" rot="SR270" align="top-left"/>
+<attribute name="NAME" x="120.142" y="34.036" size="1.778" layer="95" ratio="10" rot="SR270" align="top-left"/>
 </instance>
-<instance part="MAT-Y1" gate="G$1" x="237.617" y="228.6" smashed="yes">
-<attribute name="VALUE" x="223.52" y="229.87" size="1.778" layer="96" ratio="10" rot="SR180" align="top-left"/>
-<attribute name="NAME" x="223.52" y="232.41" size="1.778" layer="95" ratio="10" rot="SR180" align="top-left"/>
+<instance part="MAT-Y1" gate="G$1" x="130.683" y="38.1" smashed="yes" rot="R180">
+<attribute name="VALUE" x="144.78" y="36.83" size="1.778" layer="96" ratio="10" rot="SR0" align="top-left"/>
+<attribute name="NAME" x="144.78" y="34.29" size="1.778" layer="95" ratio="10" rot="SR0" align="top-left"/>
 </instance>
-<instance part="MAT-Y2" gate="G$1" x="237.617" y="222.25" smashed="yes">
-<attribute name="VALUE" x="223.52" y="223.52" size="1.778" layer="96" ratio="10" rot="SR180" align="top-left"/>
-<attribute name="NAME" x="223.52" y="226.06" size="1.778" layer="95" ratio="10" rot="SR180" align="top-left"/>
+<instance part="MAT-Y2" gate="G$1" x="130.683" y="44.45" smashed="yes" rot="R180">
+<attribute name="VALUE" x="144.78" y="43.18" size="1.778" layer="96" ratio="10" rot="SR0" align="top-left"/>
+<attribute name="NAME" x="144.78" y="40.64" size="1.778" layer="95" ratio="10" rot="SR0" align="top-left"/>
 </instance>
-<instance part="MAT-Y3" gate="G$1" x="237.617" y="215.9" smashed="yes">
-<attribute name="VALUE" x="223.52" y="217.17" size="1.778" layer="96" ratio="10" rot="SR180" align="top-left"/>
-<attribute name="NAME" x="223.52" y="219.71" size="1.778" layer="95" ratio="10" rot="SR180" align="top-left"/>
+<instance part="MAT-Y3" gate="G$1" x="130.683" y="50.8" smashed="yes" rot="R180">
+<attribute name="VALUE" x="144.78" y="49.53" size="1.778" layer="96" ratio="10" rot="SR0" align="top-left"/>
+<attribute name="NAME" x="144.78" y="46.99" size="1.778" layer="95" ratio="10" rot="SR0" align="top-left"/>
 </instance>
-<instance part="MAT-Y4" gate="G$1" x="237.617" y="209.55" smashed="yes">
-<attribute name="VALUE" x="223.52" y="210.82" size="1.778" layer="96" ratio="10" rot="SR180" align="top-left"/>
-<attribute name="NAME" x="223.52" y="213.36" size="1.778" layer="95" ratio="10" rot="SR180" align="top-left"/>
+<instance part="MAT-Y4" gate="G$1" x="130.683" y="57.15" smashed="yes" rot="R180">
+<attribute name="VALUE" x="144.78" y="55.88" size="1.778" layer="96" ratio="10" rot="SR0" align="top-left"/>
+<attribute name="NAME" x="144.78" y="53.34" size="1.778" layer="95" ratio="10" rot="SR0" align="top-left"/>
 </instance>
-<instance part="MAT-Y5" gate="G$1" x="237.617" y="203.2" smashed="yes">
-<attribute name="VALUE" x="223.52" y="204.47" size="1.778" layer="96" ratio="10" rot="SR180" align="top-left"/>
-<attribute name="NAME" x="223.52" y="207.01" size="1.778" layer="95" ratio="10" rot="SR180" align="top-left"/>
+<instance part="MAT-Y5" gate="G$1" x="130.683" y="63.5" smashed="yes" rot="R180">
+<attribute name="VALUE" x="144.78" y="62.23" size="1.778" layer="96" ratio="10" rot="SR0" align="top-left"/>
+<attribute name="NAME" x="144.78" y="59.69" size="1.778" layer="95" ratio="10" rot="SR0" align="top-left"/>
 </instance>
-<instance part="MAT-Y6" gate="G$1" x="237.617" y="196.85" smashed="yes">
-<attribute name="VALUE" x="223.52" y="198.12" size="1.778" layer="96" ratio="10" rot="SR180" align="top-left"/>
-<attribute name="NAME" x="223.52" y="200.66" size="1.778" layer="95" ratio="10" rot="SR180" align="top-left"/>
+<instance part="MAT-Y6" gate="G$1" x="130.683" y="69.85" smashed="yes" rot="R180">
+<attribute name="VALUE" x="144.78" y="68.58" size="1.778" layer="96" ratio="10" rot="SR0" align="top-left"/>
+<attribute name="NAME" x="144.78" y="66.04" size="1.778" layer="95" ratio="10" rot="SR0" align="top-left"/>
 </instance>
-<instance part="MAT-Y7" gate="G$1" x="237.617" y="190.5" smashed="yes">
-<attribute name="VALUE" x="223.52" y="191.77" size="1.778" layer="96" ratio="10" rot="SR180" align="top-left"/>
-<attribute name="NAME" x="223.52" y="194.31" size="1.778" layer="95" ratio="10" rot="SR180" align="top-left"/>
+<instance part="MAT-Y7" gate="G$1" x="130.683" y="76.2" smashed="yes" rot="R180">
+<attribute name="VALUE" x="144.78" y="74.93" size="1.778" layer="96" ratio="10" rot="SR0" align="top-left"/>
+<attribute name="NAME" x="144.78" y="72.39" size="1.778" layer="95" ratio="10" rot="SR0" align="top-left"/>
 </instance>
-<instance part="MAT-Y8" gate="G$1" x="237.617" y="184.15" smashed="yes">
-<attribute name="VALUE" x="223.52" y="185.42" size="1.778" layer="96" ratio="10" rot="SR180" align="top-left"/>
-<attribute name="NAME" x="223.52" y="187.96" size="1.778" layer="95" ratio="10" rot="SR180" align="top-left"/>
+<instance part="MAT-Y8" gate="G$1" x="130.683" y="82.55" smashed="yes" rot="R180">
+<attribute name="VALUE" x="144.78" y="81.28" size="1.778" layer="96" ratio="10" rot="SR0" align="top-left"/>
+<attribute name="NAME" x="144.78" y="78.74" size="1.778" layer="95" ratio="10" rot="SR0" align="top-left"/>
 </instance>
-<instance part="MAT-Y9" gate="G$1" x="237.617" y="177.8" smashed="yes">
-<attribute name="VALUE" x="223.52" y="179.07" size="1.778" layer="96" ratio="10" rot="SR180" align="top-left"/>
-<attribute name="NAME" x="223.52" y="181.61" size="1.778" layer="95" ratio="10" rot="SR180" align="top-left"/>
+<instance part="MAT-Y9" gate="G$1" x="130.683" y="88.9" smashed="yes" rot="R180">
+<attribute name="VALUE" x="144.78" y="87.63" size="1.778" layer="96" ratio="10" rot="SR0" align="top-left"/>
+<attribute name="NAME" x="144.78" y="85.09" size="1.778" layer="95" ratio="10" rot="SR0" align="top-left"/>
 </instance>
 </instances>
 <busses>
@@ -11228,16 +11228,16 @@ Capacitive Matrix</text>
 <pinref part="SUPPLY46" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
-<pinref part="R29" gate="G$1" pin="1"/>
-<wire x1="38.1" y1="149.86" x2="40.64" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="149.86" x2="40.64" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="SUPPLY36" gate="G$1" pin="3.3V"/>
+<pinref part="R29" gate="G$1" pin="2"/>
+<wire x1="38.1" y1="149.86" x2="40.64" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="81.28" y1="149.86" x2="83.82" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="149.86" x2="83.82" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="SUPPLY38" gate="G$1" pin="3.3V"/>
-<pinref part="R31" gate="G$1" pin="1"/>
+<pinref part="R31" gate="G$1" pin="2"/>
+<wire x1="81.28" y1="149.86" x2="83.82" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="170.18" y1="149.86" x2="172.72" y2="149.86" width="0.1524" layer="91"/>
@@ -11319,8 +11319,11 @@ Capacitive Matrix</text>
 <pinref part="U12" gate="G$1" pin="RX0"/>
 </segment>
 <segment>
-<label x="132.08" y="68.58" size="0.889" layer="95" rot="R180" xref="yes"/>
-<wire x1="134.62" y1="68.58" x2="132.08" y2="68.58" width="0.1524" layer="91"/>
+<label x="134.62" y="17.78" size="0.889" layer="95" rot="R270" xref="yes"/>
+<wire x1="134.62" y1="20.32" x2="134.62" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="MAT-X1" gate="G$1" pin="1"/>
+<wire x1="134.62" y1="20.32" x2="140.208" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="140.208" y1="20.32" x2="140.208" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PCAP_TX0" class="0">
@@ -11330,8 +11333,9 @@ Capacitive Matrix</text>
 <pinref part="U12" gate="G$1" pin="TX0"/>
 </segment>
 <segment>
-<label x="144.78" y="68.58" size="0.889" layer="95" xref="yes"/>
-<wire x1="142.24" y1="68.58" x2="144.78" y2="68.58" width="0.1524" layer="91"/>
+<label x="175.26" y="88.9" size="0.889" layer="95" xref="yes"/>
+<pinref part="MAT-Y9" gate="G$1" pin="1"/>
+<wire x1="175.26" y1="88.9" x2="147.828" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PCAP_RX1" class="0">
@@ -11341,8 +11345,11 @@ Capacitive Matrix</text>
 <pinref part="U12" gate="G$1" pin="RX1"/>
 </segment>
 <segment>
-<label x="132.08" y="66.04" size="0.889" layer="95" rot="R180" xref="yes"/>
-<wire x1="134.62" y1="66.04" x2="132.08" y2="66.04" width="0.1524" layer="91"/>
+<label x="132.08" y="17.78" size="0.889" layer="95" rot="R270" xref="yes"/>
+<wire x1="132.08" y1="22.86" x2="132.08" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="MAT-X2" gate="G$1" pin="1"/>
+<wire x1="132.08" y1="22.86" x2="133.858" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="133.858" y1="22.86" x2="133.858" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PCAP_RX2" class="0">
@@ -11352,8 +11359,11 @@ Capacitive Matrix</text>
 <pinref part="U12" gate="G$1" pin="RX2"/>
 </segment>
 <segment>
-<label x="132.08" y="63.5" size="0.889" layer="95" rot="R180" xref="yes"/>
-<wire x1="134.62" y1="63.5" x2="132.08" y2="63.5" width="0.1524" layer="91"/>
+<label x="129.54" y="17.78" size="0.889" layer="95" rot="R270" xref="yes"/>
+<wire x1="129.54" y1="22.86" x2="129.54" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="MAT-X3" gate="G$1" pin="1"/>
+<wire x1="129.54" y1="22.86" x2="127.508" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="127.508" y1="22.86" x2="127.508" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PCAP_RX3" class="0">
@@ -11363,8 +11373,11 @@ Capacitive Matrix</text>
 <pinref part="U12" gate="G$1" pin="RX3"/>
 </segment>
 <segment>
-<label x="132.08" y="60.96" size="0.889" layer="95" rot="R180" xref="yes"/>
-<wire x1="134.62" y1="60.96" x2="132.08" y2="60.96" width="0.1524" layer="91"/>
+<label x="127" y="17.78" size="0.889" layer="95" rot="R270" xref="yes"/>
+<wire x1="127" y1="17.78" x2="127" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="MAT-X4" gate="G$1" pin="1"/>
+<wire x1="127" y1="20.32" x2="121.158" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="121.158" y1="20.32" x2="121.158" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PCAP_RX4" class="0">
@@ -11374,8 +11387,11 @@ Capacitive Matrix</text>
 <pinref part="U12" gate="G$1" pin="RX4"/>
 </segment>
 <segment>
-<label x="132.08" y="58.42" size="0.889" layer="95" rot="R180" xref="yes"/>
-<wire x1="134.62" y1="58.42" x2="132.08" y2="58.42" width="0.1524" layer="91"/>
+<label x="175.26" y="68.58" size="0.889" layer="95" xref="yes"/>
+<wire x1="172.72" y1="68.58" x2="175.26" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="MAT-Y1" gate="G$1" pin="1"/>
+<wire x1="172.72" y1="68.58" x2="172.72" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="38.1" x2="147.828" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PCAP_RX5" class="0">
@@ -11385,8 +11401,11 @@ Capacitive Matrix</text>
 <pinref part="U12" gate="G$1" pin="RX5"/>
 </segment>
 <segment>
-<label x="132.08" y="55.88" size="0.889" layer="95" rot="R180" xref="yes"/>
-<wire x1="134.62" y1="55.88" x2="132.08" y2="55.88" width="0.1524" layer="91"/>
+<label x="175.26" y="71.12" size="0.889" layer="95" xref="yes"/>
+<wire x1="175.26" y1="71.12" x2="170.18" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="MAT-Y2" gate="G$1" pin="1"/>
+<wire x1="170.18" y1="71.12" x2="170.18" y2="44.45" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="44.45" x2="147.828" y2="44.45" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PCAP_RX6" class="0">
@@ -11396,8 +11415,11 @@ Capacitive Matrix</text>
 <pinref part="U12" gate="G$1" pin="RX6"/>
 </segment>
 <segment>
-<label x="132.08" y="53.34" size="0.889" layer="95" rot="R180" xref="yes"/>
-<wire x1="134.62" y1="53.34" x2="132.08" y2="53.34" width="0.1524" layer="91"/>
+<label x="175.26" y="73.66" size="0.889" layer="95" xref="yes"/>
+<wire x1="175.26" y1="73.66" x2="167.64" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="MAT-Y3" gate="G$1" pin="1"/>
+<wire x1="167.64" y1="73.66" x2="167.64" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="50.8" x2="147.828" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PCAP_RX7" class="0">
@@ -11407,8 +11429,11 @@ Capacitive Matrix</text>
 <pinref part="U12" gate="G$1" pin="RX7"/>
 </segment>
 <segment>
-<label x="132.08" y="50.8" size="0.889" layer="95" rot="R180" xref="yes"/>
-<wire x1="134.62" y1="50.8" x2="132.08" y2="50.8" width="0.1524" layer="91"/>
+<label x="175.26" y="76.2" size="0.889" layer="95" xref="yes"/>
+<wire x1="175.26" y1="76.2" x2="165.1" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="MAT-Y4" gate="G$1" pin="1"/>
+<wire x1="165.1" y1="76.2" x2="165.1" y2="57.15" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="57.15" x2="147.828" y2="57.15" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PCAP_RX8" class="0">
@@ -11418,8 +11443,11 @@ Capacitive Matrix</text>
 <pinref part="U12" gate="G$1" pin="RX8"/>
 </segment>
 <segment>
-<label x="132.08" y="48.26" size="0.889" layer="95" rot="R180" xref="yes"/>
-<wire x1="134.62" y1="48.26" x2="132.08" y2="48.26" width="0.1524" layer="91"/>
+<label x="175.26" y="78.74" size="0.889" layer="95" xref="yes"/>
+<wire x1="175.26" y1="78.74" x2="162.56" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="MAT-Y5" gate="G$1" pin="1"/>
+<wire x1="162.56" y1="78.74" x2="162.56" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="63.5" x2="147.828" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PCAP_RX9" class="0">
@@ -11428,20 +11456,12 @@ Capacitive Matrix</text>
 <wire x1="289.56" y1="187.96" x2="287.02" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="U12" gate="G$1" pin="RX9"/>
 </segment>
-<segment>
-<label x="132.08" y="45.72" size="0.889" layer="95" rot="R180" xref="yes"/>
-<wire x1="134.62" y1="45.72" x2="132.08" y2="45.72" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="PCAP_RX10" class="0">
 <segment>
 <label x="287.02" y="185.42" size="0.889" layer="95" rot="R180" xref="yes"/>
 <wire x1="289.56" y1="185.42" x2="287.02" y2="185.42" width="0.1524" layer="91"/>
 <pinref part="U12" gate="G$1" pin="RX10"/>
-</segment>
-<segment>
-<label x="132.08" y="43.18" size="0.889" layer="95" rot="R180" xref="yes"/>
-<wire x1="134.62" y1="43.18" x2="132.08" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PCAP_RX11" class="0">
@@ -11450,20 +11470,12 @@ Capacitive Matrix</text>
 <wire x1="289.56" y1="182.88" x2="287.02" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="U12" gate="G$1" pin="RX11"/>
 </segment>
-<segment>
-<label x="132.08" y="40.64" size="0.889" layer="95" rot="R180" xref="yes"/>
-<wire x1="134.62" y1="40.64" x2="132.08" y2="40.64" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="PCAP_RX12" class="0">
 <segment>
 <label x="287.02" y="180.34" size="0.889" layer="95" rot="R180" xref="yes"/>
 <wire x1="289.56" y1="180.34" x2="287.02" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="U12" gate="G$1" pin="RX12"/>
-</segment>
-<segment>
-<label x="132.08" y="38.1" size="0.889" layer="95" rot="R180" xref="yes"/>
-<wire x1="134.62" y1="38.1" x2="132.08" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PCAP_TX1" class="0">
@@ -11473,8 +11485,11 @@ Capacitive Matrix</text>
 <pinref part="U12" gate="G$1" pin="TX1"/>
 </segment>
 <segment>
-<label x="144.78" y="66.04" size="0.889" layer="95" xref="yes"/>
-<wire x1="142.24" y1="66.04" x2="144.78" y2="66.04" width="0.1524" layer="91"/>
+<label x="175.26" y="86.36" size="0.889" layer="95" xref="yes"/>
+<wire x1="175.26" y1="86.36" x2="154.94" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="MAT-Y8" gate="G$1" pin="1"/>
+<wire x1="154.94" y1="86.36" x2="154.94" y2="82.55" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="82.55" x2="147.828" y2="82.55" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PCAP_TX2" class="0">
@@ -11484,8 +11499,11 @@ Capacitive Matrix</text>
 <pinref part="U12" gate="G$1" pin="TX2"/>
 </segment>
 <segment>
-<label x="144.78" y="63.5" size="0.889" layer="95" xref="yes"/>
-<wire x1="142.24" y1="63.5" x2="144.78" y2="63.5" width="0.1524" layer="91"/>
+<label x="175.26" y="83.82" size="0.889" layer="95" xref="yes"/>
+<wire x1="175.26" y1="83.82" x2="157.48" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="MAT-Y7" gate="G$1" pin="1"/>
+<wire x1="157.48" y1="83.82" x2="157.48" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="76.2" x2="147.828" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PCAP_TX3" class="0">
@@ -11495,8 +11513,11 @@ Capacitive Matrix</text>
 <pinref part="U12" gate="G$1" pin="TX3"/>
 </segment>
 <segment>
-<label x="144.78" y="60.96" size="0.889" layer="95" xref="yes"/>
-<wire x1="142.24" y1="60.96" x2="144.78" y2="60.96" width="0.1524" layer="91"/>
+<label x="175.26" y="81.28" size="0.889" layer="95" xref="yes"/>
+<wire x1="175.26" y1="81.28" x2="160.02" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="MAT-Y6" gate="G$1" pin="1"/>
+<wire x1="160.02" y1="81.28" x2="160.02" y2="69.85" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="69.85" x2="147.828" y2="69.85" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PCAP_TX4" class="0">
@@ -11505,20 +11526,12 @@ Capacitive Matrix</text>
 <wire x1="322.58" y1="200.66" x2="325.12" y2="200.66" width="0.1524" layer="91"/>
 <pinref part="U12" gate="G$1" pin="TX4"/>
 </segment>
-<segment>
-<label x="144.78" y="58.42" size="0.889" layer="95" xref="yes"/>
-<wire x1="142.24" y1="58.42" x2="144.78" y2="58.42" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="PCAP_TX5" class="0">
 <segment>
 <label x="325.12" y="198.12" size="0.889" layer="95" xref="yes"/>
 <wire x1="322.58" y1="198.12" x2="325.12" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="U12" gate="G$1" pin="TX5"/>
-</segment>
-<segment>
-<label x="144.78" y="55.88" size="0.889" layer="95" xref="yes"/>
-<wire x1="142.24" y1="55.88" x2="144.78" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PCAP_TX6" class="0">
@@ -11527,20 +11540,12 @@ Capacitive Matrix</text>
 <wire x1="322.58" y1="195.58" x2="325.12" y2="195.58" width="0.1524" layer="91"/>
 <pinref part="U12" gate="G$1" pin="TX6"/>
 </segment>
-<segment>
-<label x="144.78" y="53.34" size="0.889" layer="95" xref="yes"/>
-<wire x1="142.24" y1="53.34" x2="144.78" y2="53.34" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="PCAP_TX7" class="0">
 <segment>
 <label x="325.12" y="193.04" size="0.889" layer="95" xref="yes"/>
 <wire x1="322.58" y1="193.04" x2="325.12" y2="193.04" width="0.1524" layer="91"/>
 <pinref part="U12" gate="G$1" pin="TX7"/>
-</segment>
-<segment>
-<label x="144.78" y="50.8" size="0.889" layer="95" xref="yes"/>
-<wire x1="142.24" y1="50.8" x2="144.78" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PCAP_TX8" class="0">
@@ -11549,20 +11554,12 @@ Capacitive Matrix</text>
 <wire x1="322.58" y1="190.5" x2="325.12" y2="190.5" width="0.1524" layer="91"/>
 <pinref part="U12" gate="G$1" pin="TX8"/>
 </segment>
-<segment>
-<label x="144.78" y="48.26" size="0.889" layer="95" xref="yes"/>
-<wire x1="142.24" y1="48.26" x2="144.78" y2="48.26" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="PCAP_TX9" class="0">
 <segment>
 <label x="325.12" y="187.96" size="0.889" layer="95" xref="yes"/>
 <wire x1="322.58" y1="187.96" x2="325.12" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="U12" gate="G$1" pin="TX9"/>
-</segment>
-<segment>
-<label x="144.78" y="45.72" size="0.889" layer="95" xref="yes"/>
-<wire x1="142.24" y1="45.72" x2="144.78" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PCAP_TX10" class="0">
@@ -11571,20 +11568,12 @@ Capacitive Matrix</text>
 <wire x1="322.58" y1="185.42" x2="325.12" y2="185.42" width="0.1524" layer="91"/>
 <pinref part="U12" gate="G$1" pin="TX10"/>
 </segment>
-<segment>
-<label x="144.78" y="43.18" size="0.889" layer="95" xref="yes"/>
-<wire x1="142.24" y1="43.18" x2="144.78" y2="43.18" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="PCAP_TX11" class="0">
 <segment>
 <label x="325.12" y="182.88" size="0.889" layer="95" xref="yes"/>
 <wire x1="322.58" y1="182.88" x2="325.12" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="U12" gate="G$1" pin="TX11"/>
-</segment>
-<segment>
-<label x="144.78" y="40.64" size="0.889" layer="95" xref="yes"/>
-<wire x1="142.24" y1="40.64" x2="144.78" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PCAP_TX12" class="0">
@@ -11593,20 +11582,12 @@ Capacitive Matrix</text>
 <wire x1="322.58" y1="180.34" x2="325.12" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="U12" gate="G$1" pin="TX12"/>
 </segment>
-<segment>
-<label x="144.78" y="38.1" size="0.889" layer="95" xref="yes"/>
-<wire x1="142.24" y1="38.1" x2="144.78" y2="38.1" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="PCAP_TX13" class="0">
 <segment>
 <label x="325.12" y="177.8" size="0.889" layer="95" xref="yes"/>
 <wire x1="322.58" y1="177.8" x2="325.12" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="U12" gate="G$1" pin="TX13"/>
-</segment>
-<segment>
-<label x="144.78" y="35.56" size="0.889" layer="95" xref="yes"/>
-<wire x1="142.24" y1="35.56" x2="144.78" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PCAP_TX14" class="0">
@@ -11615,20 +11596,12 @@ Capacitive Matrix</text>
 <wire x1="322.58" y1="175.26" x2="325.12" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="U12" gate="G$1" pin="TX14"/>
 </segment>
-<segment>
-<label x="144.78" y="33.02" size="0.889" layer="95" xref="yes"/>
-<wire x1="142.24" y1="33.02" x2="144.78" y2="33.02" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="PCAP_TX15" class="0">
 <segment>
 <label x="325.12" y="172.72" size="0.889" layer="95" xref="yes"/>
 <wire x1="322.58" y1="172.72" x2="325.12" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="U12" gate="G$1" pin="TX15"/>
-</segment>
-<segment>
-<label x="144.78" y="30.48" size="0.889" layer="95" xref="yes"/>
-<wire x1="142.24" y1="30.48" x2="144.78" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PCAP_TX16" class="0">
@@ -11637,20 +11610,12 @@ Capacitive Matrix</text>
 <wire x1="322.58" y1="170.18" x2="325.12" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="U12" gate="G$1" pin="TX16"/>
 </segment>
-<segment>
-<label x="144.78" y="27.94" size="0.889" layer="95" xref="yes"/>
-<wire x1="142.24" y1="27.94" x2="144.78" y2="27.94" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="PCAP_TX17" class="0">
 <segment>
 <label x="325.12" y="167.64" size="0.889" layer="95" xref="yes"/>
 <wire x1="322.58" y1="167.64" x2="325.12" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="U12" gate="G$1" pin="TX17"/>
-</segment>
-<segment>
-<label x="144.78" y="25.4" size="0.889" layer="95" xref="yes"/>
-<wire x1="142.24" y1="25.4" x2="144.78" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VBAT" class="0">
@@ -11743,8 +11708,6 @@ Capacitive Matrix</text>
 </net>
 <net name="FSR_CH_P" class="0">
 <segment>
-<pinref part="R29" gate="G$1" pin="2"/>
-<wire x1="38.1" y1="144.78" x2="40.64" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="144.78" x2="40.64" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="R30" gate="G$1" pin="P$2"/>
 <wire x1="40.64" y1="142.24" x2="40.64" y2="139.7" width="0.1524" layer="91"/>
@@ -11755,22 +11718,24 @@ Capacitive Matrix</text>
 <wire x1="48.26" y1="142.24" x2="50.8" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="134.62" x2="48.26" y2="142.24" width="0.1524" layer="91"/>
 <junction x="48.26" y="142.24"/>
+<pinref part="R29" gate="G$1" pin="1"/>
+<wire x1="38.1" y1="144.78" x2="40.64" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FSR_CH_N" class="0">
 <segment>
-<wire x1="81.28" y1="144.78" x2="83.82" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="144.78" x2="83.82" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="R32" gate="G$1" pin="P$2"/>
 <wire x1="83.82" y1="142.24" x2="83.82" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="142.24" x2="91.44" y2="142.24" width="0.1524" layer="91"/>
 <junction x="83.82" y="142.24"/>
 <label x="93.98" y="142.24" size="0.889" layer="95" xref="yes"/>
-<pinref part="R31" gate="G$1" pin="2"/>
 <pinref part="C52" gate="G$1" pin="P$1"/>
 <wire x1="91.44" y1="142.24" x2="93.98" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="134.62" x2="91.44" y2="142.24" width="0.1524" layer="91"/>
 <junction x="91.44" y="142.24"/>
+<pinref part="R31" gate="G$1" pin="1"/>
+<wire x1="81.28" y1="144.78" x2="83.82" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FSR_VOL_P" class="0">
