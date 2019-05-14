@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8227,6 +8227,9 @@ Logo</text>
 <part name="MAT-Y8" library="Touch Panel" deviceset="Y_4P" device=""/>
 <part name="MAT-Y9" library="Touch Panel" deviceset="Y_4P" device=""/>
 <part name="LOGO1" library="Silkscreen" deviceset="IPL" device="-10MM"/>
+<part name="GND88" library="Utility &gt; Power Symbols" deviceset="GND" device=""/>
+<part name="SUPPLY50" library="Utility &gt; Power Symbols" deviceset="VBAT" device=""/>
+<part name="C62" library="Passive Components &gt; Capacitors &gt; Multilayer Ceramic Capacitors MLCC" deviceset="MLCC" device="0603" value="10u"/>
 </parts>
 <sheets>
 <sheet>
@@ -9278,7 +9281,7 @@ or to the ufl connector</text>
 <text x="228.6" y="193.04" size="3.81" layer="97">Flash Memory</text>
 <text x="165.1" y="43.18" size="3.81" layer="97">MCU</text>
 <text x="307.34" y="99.06" size="3.81" layer="97">Clocks</text>
-<text x="12.7" y="76.2" size="3.81" layer="97">Antena &amp; Ballun</text>
+<text x="12.7" y="76.2" size="3.81" layer="97">Antena &amp; Balun</text>
 <text x="12.7" y="10.16" size="3.81" layer="97">Debugging</text>
 <text x="82.296" y="8.128" size="1.778" layer="97">When the Jumpers are Connected
 TagConnect is non compliant with the standard
@@ -11006,6 +11009,16 @@ Capacitive Matrix</text>
 <attribute name="VALUE" x="144.78" y="87.63" size="1.778" layer="96" ratio="10" rot="SR0" align="top-left"/>
 <attribute name="NAME" x="144.78" y="85.09" size="1.778" layer="95" ratio="10" rot="SR0" align="top-left"/>
 </instance>
+<instance part="GND88" gate="1" x="93.98" y="213.36" smashed="yes">
+<attribute name="VALUE" x="93.98" y="213.106" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="SUPPLY50" gate="G$1" x="93.98" y="226.06" smashed="yes">
+<attribute name="VALUE" x="93.98" y="228.854" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="C62" gate="G$1" x="93.98" y="220.98" smashed="yes">
+<attribute name="NAME" x="92.456" y="218.44" size="1.27" layer="95" rot="R90"/>
+<attribute name="VALUE" x="96.52" y="218.44" size="1.27" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -11167,6 +11180,11 @@ Capacitive Matrix</text>
 <pinref part="C56" gate="G$1" pin="P$2"/>
 <pinref part="GND79" gate="1" pin="GND"/>
 <wire x1="180.34" y1="129.54" x2="180.34" y2="127" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND88" gate="1" pin="GND"/>
+<wire x1="93.98" y1="218.44" x2="93.98" y2="215.9" width="0.1524" layer="91"/>
+<pinref part="C62" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -11636,6 +11654,11 @@ Capacitive Matrix</text>
 <wire x1="101.6" y1="223.52" x2="101.6" y2="226.06" width="0.1524" layer="91"/>
 <pinref part="SUPPLY39" gate="G$1" pin="VBAT"/>
 <pinref part="C53" gate="G$1" pin="P$1"/>
+</segment>
+<segment>
+<wire x1="93.98" y1="223.52" x2="93.98" y2="226.06" width="0.1524" layer="91"/>
+<pinref part="SUPPLY50" gate="G$1" pin="VBAT"/>
+<pinref part="C62" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$27" class="0">
